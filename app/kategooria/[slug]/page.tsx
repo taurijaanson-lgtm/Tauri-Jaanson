@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { kategooriaIkoon } from "@/components/illustratsioonid/Ikoonid";
 import Kataloogivaade, { loeParameetrid } from "@/components/Kataloogivaade";
 import {
   leiaKategooria,
@@ -54,7 +55,7 @@ export default async function KategooriaLeht(
       <nav aria-label="Teekond" className="mx-auto max-w-7xl px-4 pt-6 text-sm text-hall-600">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
-            <Link href="/" className="hover:text-navi-800 hover:underline">
+            <Link href="/" className="hover:text-oliiv-800 hover:underline">
               Avaleht
             </Link>
           </li>
@@ -64,7 +65,7 @@ export default async function KategooriaLeht(
               <li>
                 <Link
                   href={`/kategooria/${vanem.slug}`}
-                  className="hover:text-navi-800 hover:underline"
+                  className="hover:text-oliiv-800 hover:underline"
                 >
                   {vanem.nimi}
                 </Link>
@@ -72,7 +73,7 @@ export default async function KategooriaLeht(
               <li aria-hidden="true">/</li>
             </>
           )}
-          <li className="font-medium text-navi-800">{kategooria.nimi}</li>
+          <li className="font-medium text-oliiv-800">{kategooria.nimi}</li>
         </ol>
       </nav>
 
@@ -83,7 +84,7 @@ export default async function KategooriaLeht(
               <li key={alam.id}>
                 <Link
                   href={`/kategooria/${alam.slug}`}
-                  className="inline-flex items-center gap-2 rounded-full border border-hall-200 bg-white px-4 py-2 text-sm text-navi-800 transition hover:border-navi-600"
+                  className="inline-flex items-center gap-2 rounded-full border border-hall-200 bg-white px-4 py-2 text-sm text-oliiv-800 transition hover:border-oliiv-600"
                 >
                   {alam.nimi}
                   <span className="text-xs text-hall-400">{alam.tooteid}</span>
@@ -100,6 +101,7 @@ export default async function KategooriaLeht(
         loend={loend}
         parameetrid={parameetrid}
         tootjad={loeTootjad()}
+        ikoon={kategooriaIkoon(kategooria.nimi, kategooria.tee)}
       />
     </>
   );

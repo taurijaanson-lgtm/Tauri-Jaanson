@@ -1,29 +1,31 @@
 @import "tailwindcss";
 
 /*
- * Poe värvipalett: sügav navi (usaldusväärsus, tööstus) + turvakollane aktsent.
+ * Poe värvipalett: militaarroheline (oliiv) + khaki-kuldne aktsent.
  * Hoiame palett-tokenid ühes kohas, et kujundust oleks lihtne muuta.
  */
 @theme {
-  --color-navi-50: #f2f5fb;
-  --color-navi-100: #e2e9f5;
-  --color-navi-200: #c6d3e9;
-  --color-navi-600: #274a83;
-  --color-navi-700: #1c3765;
-  --color-navi-800: #14284b;
-  --color-navi-900: #0d1b33;
+  --color-oliiv-50: #f3f5ed;
+  --color-oliiv-100: #e3e9d6;
+  --color-oliiv-200: #c4cfb4;
+  --color-oliiv-300: #a9bd8c;
+  --color-oliiv-500: #6b7f4e;
+  --color-oliiv-600: #4d6139;
+  --color-oliiv-700: #34452a;
+  --color-oliiv-800: #23301b;
+  --color-oliiv-900: #161c11;
 
-  --color-kollane-300: #ffd66b;
-  --color-kollane-400: #f7c948;
-  --color-kollane-500: #f5b301;
-  --color-kollane-600: #d99a00;
+  --color-liiv-300: #ecd9a0;
+  --color-liiv-400: #dcc061;
+  --color-liiv-500: #c9a227;
+  --color-liiv-600: #a8851b;
 
-  --color-hall-50: #f7f8fa;
-  --color-hall-100: #eef0f4;
-  --color-hall-200: #dfe3ea;
-  --color-hall-400: #9aa3b2;
-  --color-hall-600: #5b6577;
-  --color-hall-800: #2b3444;
+  --color-hall-50: #f7f7f2;
+  --color-hall-100: #eeeee5;
+  --color-hall-200: #dcdccd;
+  --color-hall-400: #96998a;
+  --color-hall-600: #5a5f50;
+  --color-hall-800: #2c3026;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
@@ -36,6 +38,34 @@ body {
   background-color: var(--color-hall-50);
   color: var(--color-hall-800);
   -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Kamuflaažitekstuur tumedatele pindadele (päis, jalus, hero).
+ * Kihiline raadiusgradient annab pehme laigulise mustri ilma pildifailita.
+ */
+.kamuflaaz {
+  background-color: var(--color-oliiv-800);
+  background-image:
+    radial-gradient(ellipse 22rem 12rem at 12% 18%, #2d3c22 0%, transparent 60%),
+    radial-gradient(ellipse 18rem 10rem at 78% 12%, #1c2717 0%, transparent 62%),
+    radial-gradient(ellipse 26rem 14rem at 62% 82%, #384a2b 0%, transparent 58%),
+    radial-gradient(ellipse 16rem 9rem at 28% 92%, #1c2717 0%, transparent 60%);
+}
+
+/* Diagonaalne hoiatustriip (sektsioonide eraldajaks). */
+.hoiatustriip {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-liiv-500) 0 14px,
+    var(--color-oliiv-900) 14px 28px
+  );
+}
+
+/* Trafaretttekst: laokastile tembeldatud pealkirjade jaoks. */
+.trafarett {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 /* Tarnija kirjeldused tulevad HTML-ina; anname neile loetava vormistuse. */
@@ -69,6 +99,6 @@ body {
 
 /* Klaviatuuriga liikujale selge fookusraam. */
 :focus-visible {
-  outline: 2px solid var(--color-navi-600);
+  outline: 2px solid var(--color-oliiv-600);
   outline-offset: 2px;
 }

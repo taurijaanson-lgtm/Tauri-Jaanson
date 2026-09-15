@@ -42,7 +42,7 @@ export default function Filtrivorm({
           name="jarjesta"
           defaultValue={järjestus}
           onChange={saada}
-          className="rounded-lg border border-hall-200 bg-white px-3 py-2 text-sm text-navi-800"
+          className="rounded-lg border border-hall-200 bg-white px-3 py-2 text-sm text-oliiv-800"
         >
           <option value="uued">Uuemad enne</option>
           <option value="odavamad">Odavamad enne</option>
@@ -61,7 +61,7 @@ export default function Filtrivorm({
             name="tootja"
             defaultValue={tootja}
             onChange={saada}
-            className="rounded-lg border border-hall-200 bg-white px-3 py-2 text-sm text-navi-800"
+            className="rounded-lg border border-hall-200 bg-white px-3 py-2 text-sm text-oliiv-800"
           >
             <option value="">Kõik tootjad</option>
             {tootjad.map((nimi) => (
@@ -80,7 +80,7 @@ export default function Filtrivorm({
           value="1"
           defaultChecked={ainultLaos}
           onChange={saada}
-          className="h-4 w-4 rounded border-hall-400 text-navi-800"
+          className="h-4 w-4 rounded border-hall-400 text-oliiv-800"
         />
         Ainult laos olevad
       </label>
@@ -88,7 +88,7 @@ export default function Filtrivorm({
       <noscript>
         <button
           type="submit"
-          className="rounded-lg bg-navi-800 px-4 py-2 text-sm font-medium text-white"
+          className="rounded-lg bg-oliiv-800 px-4 py-2 text-sm font-medium text-white"
         >
           Rakenda
         </button>

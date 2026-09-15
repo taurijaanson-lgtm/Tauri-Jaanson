@@ -35,20 +35,20 @@ export default async function TellimuseLeht(
       </div>
 
       <section className="mt-8 rounded-xl border border-hall-200 bg-white p-6">
-        <h2 className="mb-4 text-lg font-bold text-navi-900">Maksejuhised</h2>
+        <h2 className="mb-4 text-lg font-bold text-oliiv-900">Maksejuhised</h2>
         <dl className="grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[160px_1fr]">
           <dt className="text-hall-600">Saaja</dt>
-          <dd className="font-medium text-navi-800">{pood.pank.saaja}</dd>
+          <dd className="font-medium text-oliiv-800">{pood.pank.saaja}</dd>
           <dt className="text-hall-600">IBAN</dt>
-          <dd className="font-mono font-medium text-navi-800">{pood.pank.iban}</dd>
+          <dd className="font-mono font-medium text-oliiv-800">{pood.pank.iban}</dd>
           <dt className="text-hall-600">Pank</dt>
-          <dd className="font-medium text-navi-800">{pood.pank.nimi}</dd>
+          <dd className="font-medium text-oliiv-800">{pood.pank.nimi}</dd>
           <dt className="text-hall-600">Summa</dt>
-          <dd className="font-bold text-navi-900">
+          <dd className="font-bold text-oliiv-900">
             {vormindaHind(tellimus.kokku_sendid)}
           </dd>
           <dt className="text-hall-600">Selgitus</dt>
-          <dd className="font-medium text-navi-800">{tellimus.number}</dd>
+          <dd className="font-medium text-oliiv-800">{tellimus.number}</dd>
         </dl>
         <p className="mt-4 text-sm text-hall-600">
           Saadame kauba teele kohe pärast makse laekumist.
@@ -56,7 +56,7 @@ export default async function TellimuseLeht(
       </section>
 
       <section className="mt-6 rounded-xl border border-hall-200 bg-white p-6">
-        <h2 className="mb-4 text-lg font-bold text-navi-900">Tellimuse sisu</h2>
+        <h2 className="mb-4 text-lg font-bold text-oliiv-900">Tellimuse sisu</h2>
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-hall-200 text-left text-hall-600">
@@ -68,7 +68,7 @@ export default async function TellimuseLeht(
           <tbody>
             {tellimus.read.map((rida) => (
               <tr key={rida.toode_id + (rida.variant_id ?? "")} className="border-b border-hall-100">
-                <td className="py-2 pr-4 text-navi-800">
+                <td className="py-2 pr-4 text-oliiv-800">
                   {rida.nimi}
                   {rida.variant_nimi && (
                     <span className="block text-xs text-hall-600">{rida.variant_nimi}</span>
@@ -101,10 +101,10 @@ export default async function TellimuseLeht(
               </td>
             </tr>
             <tr className="border-t border-hall-200">
-              <td colSpan={2} className="py-2 text-right font-bold text-navi-900">
+              <td colSpan={2} className="py-2 text-right font-bold text-oliiv-900">
                 Kokku
               </td>
-              <td className="py-2 text-right font-bold text-navi-900">
+              <td className="py-2 text-right font-bold text-oliiv-900">
                 {vormindaHind(tellimus.kokku_sendid)}
               </td>
             </tr>
@@ -121,26 +121,26 @@ export default async function TellimuseLeht(
       </section>
 
       <section className="mt-6 rounded-xl border border-hall-200 bg-white p-6">
-        <h2 className="mb-4 text-lg font-bold text-navi-900">Tarne</h2>
+        <h2 className="mb-4 text-lg font-bold text-oliiv-900">Tarne</h2>
         <dl className="grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[160px_1fr]">
           <dt className="text-hall-600">Tarneviis</dt>
-          <dd className="font-medium text-navi-800">
+          <dd className="font-medium text-oliiv-800">
             {tarneviis?.nimi ?? tellimus.tarneviis}
           </dd>
           <dt className="text-hall-600">Sihtkoht</dt>
-          <dd className="font-medium text-navi-800">{tarneaadress}</dd>
+          <dd className="font-medium text-oliiv-800">{tarneaadress}</dd>
           <dt className="text-hall-600">Saaja</dt>
-          <dd className="font-medium text-navi-800">
+          <dd className="font-medium text-oliiv-800">
             {tellimus.nimi}, {tellimus.telefon}
           </dd>
           <dt className="text-hall-600">Tellimuse aeg</dt>
-          <dd className="font-medium text-navi-800">
+          <dd className="font-medium text-oliiv-800">
             {vormindaKuupäev(tellimus.loodud)}
           </dd>
           {tellimus.markused && (
             <>
               <dt className="text-hall-600">Märkused</dt>
-              <dd className="text-navi-800">{tellimus.markused}</dd>
+              <dd className="text-oliiv-800">{tellimus.markused}</dd>
             </>
           )}
         </dl>
@@ -149,7 +149,7 @@ export default async function TellimuseLeht(
       <div className="mt-8 text-center">
         <Link
           href="/tooted"
-          className="inline-block rounded-lg bg-navi-800 px-6 py-3 font-semibold text-white transition hover:bg-navi-700"
+          className="inline-block rounded-lg bg-oliiv-800 px-6 py-3 font-semibold text-white transition hover:bg-oliiv-700"
         >
           Jätka ostlemist
         </Link>

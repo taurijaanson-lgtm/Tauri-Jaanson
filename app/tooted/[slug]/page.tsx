@@ -67,7 +67,7 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
       <nav aria-label="Teekond" className="mb-6 text-sm text-hall-600">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
-            <Link href="/" className="hover:text-navi-800 hover:underline">
+            <Link href="/" className="hover:text-oliiv-800 hover:underline">
               Avaleht
             </Link>
           </li>
@@ -77,7 +77,7 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
               <li>
                 <Link
                   href={`/kategooria/${toode.kategooria_slug}`}
-                  className="hover:text-navi-800 hover:underline"
+                  className="hover:text-oliiv-800 hover:underline"
                 >
                   {toode.kategooria_nimi}
                 </Link>
@@ -85,7 +85,7 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
               <li aria-hidden="true">/</li>
             </>
           )}
-          <li className="font-medium text-navi-800">{toode.nimi}</li>
+          <li className="font-medium text-oliiv-800">{toode.nimi}</li>
         </ol>
       </nav>
 
@@ -98,10 +98,10 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
               {toode.tootja}
             </p>
           )}
-          <h1 className="text-3xl font-bold text-navi-900">{toode.nimi}</h1>
+          <h1 className="text-3xl font-bold text-oliiv-900">{toode.nimi}</h1>
 
           <div className="mt-4 flex flex-wrap items-baseline gap-3">
-            <p className="text-4xl font-black text-navi-900">
+            <p className="text-4xl font-black text-oliiv-900">
               {vormindaHind(toode.hind_sendid)}
             </p>
             <p className="text-sm text-hall-600">
@@ -140,7 +140,7 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
             <li>14-päevane tagastusõigus</li>
             <li>
               Küsimused:{" "}
-              <a className="text-navi-600 hover:underline" href={`mailto:${pood.epost}`}>
+              <a className="text-oliiv-600 hover:underline" href={`mailto:${pood.epost}`}>
                 {pood.epost}
               </a>
             </li>
@@ -148,17 +148,17 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
 
           <dl className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 border-t border-hall-200 pt-5 text-sm">
             <dt className="text-hall-600">Tootekood</dt>
-            <dd className="font-medium text-navi-800">{toode.sku ?? toode.id}</dd>
+            <dd className="font-medium text-oliiv-800">{toode.sku ?? toode.id}</dd>
             {toode.ean && (
               <>
                 <dt className="text-hall-600">EAN</dt>
-                <dd className="font-medium text-navi-800">{toode.ean}</dd>
+                <dd className="font-medium text-oliiv-800">{toode.ean}</dd>
               </>
             )}
             {toode.kaal !== null && (
               <>
                 <dt className="text-hall-600">Kaal</dt>
-                <dd className="font-medium text-navi-800">
+                <dd className="font-medium text-oliiv-800">
                   {toode.kaal.toString().replace(".", ",")} kg
                 </dd>
               </>
@@ -166,7 +166,7 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
             {toode.kategooria_nimi && (
               <>
                 <dt className="text-hall-600">Kategooria</dt>
-                <dd className="font-medium text-navi-800">{toode.kategooria_nimi}</dd>
+                <dd className="font-medium text-oliiv-800">{toode.kategooria_nimi}</dd>
               </>
             )}
           </dl>
@@ -175,14 +175,14 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
 
       {toode.kirjeldus && (
         <section className="mt-12 max-w-3xl">
-          <h2 className="mb-4 text-xl font-bold text-navi-900">Tootekirjeldus</h2>
+          <h2 className="mb-4 text-xl font-bold text-oliiv-900">Tootekirjeldus</h2>
           <div
             className="kirjeldus text-hall-800"
             dangerouslySetInnerHTML={{ __html: toode.kirjeldus }}
           />
           {toode.variandid.length > 0 && (
             <div className="mt-8">
-              <h3 className="mb-3 text-base font-semibold text-navi-800">
+              <h3 className="mb-3 text-base font-semibold text-oliiv-800">
                 Saadaolevad variandid
               </h3>
               <table className="w-full border-collapse text-sm">
@@ -196,7 +196,7 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
                 <tbody>
                   {toode.variandid.map((variant) => (
                     <tr key={variant.id} className="border-b border-hall-100">
-                      <td className="py-2 pr-4 font-medium text-navi-800">
+                      <td className="py-2 pr-4 font-medium text-oliiv-800">
                         {variant.vaartus ?? variant.id}
                       </td>
                       <td className="py-2 pr-4 text-hall-600">{variant.ean ?? "–"}</td>
@@ -214,7 +214,7 @@ export default async function ToodeLeht(props: PageProps<"/tooted/[slug]">) {
 
       {sarnased.length > 0 && (
         <section className="mt-16">
-          <h2 className="mb-6 text-xl font-bold text-navi-900">Sarnased tooted</h2>
+          <h2 className="mb-6 text-xl font-bold text-oliiv-900">Sarnased tooted</h2>
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {sarnased.map((sarnane) => (
               <li key={sarnane.id}>

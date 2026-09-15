@@ -11,7 +11,7 @@ function Nupp({ keelatud }: { keelatud: boolean }) {
     <button
       type="submit"
       disabled={keelatud || pending}
-      className="flex-1 rounded-lg bg-kollane-500 px-6 py-3 text-base font-bold text-navi-900 transition hover:bg-kollane-400 disabled:cursor-not-allowed disabled:bg-hall-200 disabled:text-hall-600"
+      className="flex-1 rounded-lg bg-liiv-500 px-6 py-3 text-base font-bold text-oliiv-900 transition hover:bg-liiv-400 disabled:cursor-not-allowed disabled:bg-hall-200 disabled:text-hall-600"
     >
       {pending ? "Lisan…" : "Lisa ostukorvi"}
     </button>
@@ -47,7 +47,7 @@ export default function LisaKorvi({
 
       {variandid.length > 0 && (
         <fieldset>
-          <legend className="mb-2 text-sm font-semibold text-navi-800">
+          <legend className="mb-2 text-sm font-semibold text-oliiv-800">
             Vali {variandiNimi.toLowerCase()}
           </legend>
           <div className="flex flex-wrap gap-2">
@@ -68,10 +68,10 @@ export default function LisaKorvi({
                   }
                   className={`min-w-14 rounded-lg border px-3 py-2 text-sm font-medium transition ${
                     aktiivne
-                      ? "border-navi-800 bg-navi-800 text-white"
+                      ? "border-oliiv-800 bg-oliiv-800 text-white"
                       : pole
                         ? "cursor-not-allowed border-hall-200 bg-hall-50 text-hall-400 line-through"
-                        : "border-hall-200 bg-white text-navi-800 hover:border-navi-600"
+                        : "border-hall-200 bg-white text-oliiv-800 hover:border-oliiv-600"
                   }`}
                 >
                   {variant.vaartus ?? variant.id}
@@ -93,7 +93,7 @@ export default function LisaKorvi({
             type="button"
             onClick={() => setKogus((k) => Math.max(1, k - 1))}
             aria-label="Vähenda kogust"
-            className="px-3 py-2 text-lg text-hall-600 hover:text-navi-800"
+            className="px-3 py-2 text-lg text-hall-600 hover:text-oliiv-800"
           >
             −
           </button>
@@ -104,7 +104,7 @@ export default function LisaKorvi({
             type="button"
             onClick={() => setKogus((k) => Math.min(Math.max(1, saadaval), k + 1))}
             aria-label="Suurenda kogust"
-            className="px-3 py-2 text-lg text-hall-600 hover:text-navi-800"
+            className="px-3 py-2 text-lg text-hall-600 hover:text-oliiv-800"
           >
             +
           </button>

@@ -3,6 +3,7 @@ import { loeKategooriaPuu } from "@/lib/kataloog";
 import { pood, tasutaTarneAlates } from "@/lib/konfiguratsioon";
 import { vormindaHind } from "@/lib/hinnad";
 import { loeOstukorv } from "@/lib/ostukorv";
+import Ikoon from "./illustratsioonid/Ikoonid";
 import Otsinguriba from "./Otsinguriba";
 
 /** Poe päis: teaderiba, logo, otsing, ostukorv ja kategooriamenüü. */
@@ -14,18 +15,18 @@ export default async function Pais() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-hall-200 bg-white/95 backdrop-blur">
-      <div className="bg-navi-800 text-white">
+      <div className="kamuflaaz text-white">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 py-2 text-xs sm:text-sm">
           <p>
             Tasuta tarne alates{" "}
-            <strong className="text-kollane-400">
+            <strong className="text-liiv-400">
               {vormindaHind(tasutaTarneAlates)}
             </strong>{" "}
             · Tarne 1–3 tööpäeva
           </p>
           <p className="hidden sm:block">
             Küsi nõu:{" "}
-            <a className="underline hover:text-kollane-400" href={`tel:${pood.telefon.replace(/\s/g, "")}`}>
+            <a className="underline hover:text-liiv-400" href={`tel:${pood.telefon.replace(/\s/g, "")}`}>
               {pood.telefon}
             </a>
           </p>
@@ -34,11 +35,11 @@ export default async function Pais() {
 
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-4 py-4">
         <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-kollane-500 text-lg font-black text-navi-900">
-            SP
+          <span className="flex h-11 w-11 items-center justify-center rounded-sm bg-oliiv-800 ring-2 ring-liiv-500">
+            <Ikoon nimi="kiiver" className="h-7 w-7 text-liiv-400" />
           </span>
           <span className="leading-tight">
-            <span className="block text-lg font-bold text-navi-800">{pood.nimi}</span>
+            <span className="trafarett block text-lg font-black text-oliiv-800">{pood.nimi}</span>
             <span className="hidden text-xs text-hall-600 sm:block">{pood.slogan}</span>
           </span>
         </Link>
@@ -49,7 +50,7 @@ export default async function Pais() {
 
         <Link
           href="/ostukorv"
-          className="order-2 ml-auto flex items-center gap-2 rounded-lg border border-hall-200 px-3 py-2 text-sm font-medium text-navi-800 transition hover:border-navi-600 hover:bg-navi-50 sm:order-3"
+          className="order-2 ml-auto flex items-center gap-2 rounded-lg border border-hall-200 px-3 py-2 text-sm font-medium text-oliiv-800 transition hover:border-oliiv-600 hover:bg-oliiv-50 sm:order-3"
         >
           <svg
             aria-hidden="true"
@@ -69,7 +70,7 @@ export default async function Pais() {
           </svg>
           <span className="hidden sm:inline">Ostukorv</span>
           <span
-            className="min-w-6 rounded-full bg-navi-800 px-2 py-0.5 text-center text-xs font-bold text-white"
+            className="min-w-6 rounded-full bg-oliiv-800 px-2 py-0.5 text-center text-xs font-bold text-white"
             aria-label={`Ostukorvis ${korv.esemeid} toodet`}
           >
             {korv.esemeid}
@@ -77,12 +78,12 @@ export default async function Pais() {
         </Link>
       </div>
 
-      <nav aria-label="Kategooriad" className="border-t border-hall-100 bg-white">
+      <nav aria-label="Kategooriad" className="border-t border-oliiv-100 bg-oliiv-50">
         <ul className="mx-auto flex max-w-7xl gap-1 overflow-x-auto px-4 py-2 text-sm">
           <li>
             <Link
               href="/tooted"
-              className="whitespace-nowrap rounded-md px-3 py-1.5 font-medium text-navi-800 hover:bg-hall-100"
+              className="whitespace-nowrap rounded-sm px-3 py-1.5 font-bold text-oliiv-800 hover:bg-oliiv-100"
             >
               Kõik tooted
             </Link>
@@ -91,7 +92,7 @@ export default async function Pais() {
             <li key={kategooria.id} className="group relative">
               <Link
                 href={`/kategooria/${kategooria.slug}`}
-                className="block whitespace-nowrap rounded-md px-3 py-1.5 text-hall-800 hover:bg-hall-100"
+                className="block whitespace-nowrap rounded-sm px-3 py-1.5 text-hall-800 hover:bg-oliiv-100"
               >
                 {kategooria.nimi}
               </Link>

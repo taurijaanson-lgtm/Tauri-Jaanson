@@ -132,6 +132,33 @@ Tõlketa toode kuvatakse algses keeles, nii et kataloog ei jää kunagi tühjaks
 Algne nimi säilib andmebaasis (`nimi_algne`) ja on otsitav, seega tarnija
 tootenimega leiab toote ka siis, kui see on tõlgitud.
 
+## Kujundus
+
+Pood kasutab militaarrohelist paletti: sügav oliiv (`--color-oliiv-*`) koos
+khaki-kuldse aktsendiga (`--color-liiv-*`). Kõik värvid on määratud ühes kohas,
+failis `app/globals.css`, seega paleti vahetamiseks piisab tokenite muutmisest.
+
+Illustratsioonid on inline-SVG-d kaustas `components/illustratsioonid/`:
+
+| Fail | Sisu |
+| --- | --- |
+| `Ikoonid.tsx` | 12 joonistust (kiiver, saabas, kinnas, püksid, prillid, trell, võti, vest, kuulmiskaitsmed, mõõdulint, jope, haamer) ühtses 64×64 ruudustikus |
+| `Hero.tsx` | avalehe suur stseen: esemed kamuflaažitaustal, hoiatustriip, trafarettjooned |
+
+Ikoonid valitakse kategooriale automaatselt funktsiooniga `kategooriaIkoon()`,
+mis otsib märksõnu nii eesti- kui poolakeelsest nimest. Uue kategooria
+lisandumisel feedi saab see sobiva ikooni ilma koodi muutmata; tundmatu
+kategooria saab üldise ikooni.
+
+Kuna illustratsioonid on vektorina koodis, laadivad nad kohe, on igal ekraanil
+teravad ega sõltu välisest pildiserverist.
+
+### Oma hero-pildi kasutamine
+
+Kui soovid avalehele oma pildi (nt Canvas tehtud illustratsiooni), salvesta see
+failina `public/pildid/hero.png` – avaleht võtab selle automaatselt kasutusele
+vektorillustratsiooni asemel. Toetatud on ka `.jpg`, `.webp` ja `.svg`.
+
 ## Poe struktuur
 
 | Tee | Sisu |

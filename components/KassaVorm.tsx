@@ -51,7 +51,7 @@ function Väli({
 } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <p className="space-y-1">
-      <label htmlFor={nimi} className="block text-sm font-medium text-navi-800">
+      <label htmlFor={nimi} className="block text-sm font-medium text-oliiv-800">
         {silt}
       </label>
       <input
@@ -64,7 +64,7 @@ function Väli({
         className={`w-full rounded-lg border bg-white px-3 py-2.5 text-sm text-hall-800 focus:outline-none ${
           viga
             ? "border-red-400 focus:border-red-500"
-            : "border-hall-200 focus:border-navi-600"
+            : "border-hall-200 focus:border-oliiv-600"
         }`}
         {...rest}
       />
@@ -84,7 +84,7 @@ function EsitaNupp({ summa }: { summa: number }) {
     <button
       type="submit"
       disabled={pending}
-      className="w-full rounded-lg bg-kollane-500 px-6 py-3.5 text-base font-bold text-navi-900 transition hover:bg-kollane-400 disabled:cursor-not-allowed disabled:bg-hall-200"
+      className="w-full rounded-lg bg-liiv-500 px-6 py-3.5 text-base font-bold text-oliiv-900 transition hover:bg-liiv-400 disabled:cursor-not-allowed disabled:bg-hall-200"
     >
       {pending ? "Saadan tellimust…" : `Esita tellimus – ${vormindaHind(summa)}`}
     </button>
@@ -127,7 +127,7 @@ export default function KassaVorm({
         )}
 
         <section className="rounded-xl border border-hall-200 bg-white p-6">
-          <h2 className="mb-4 text-lg font-bold text-navi-900">Kontaktandmed</h2>
+          <h2 className="mb-4 text-lg font-bold text-oliiv-900">Kontaktandmed</h2>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="sm:col-span-2">
               <Väli
@@ -163,7 +163,7 @@ export default function KassaVorm({
         </section>
 
         <section className="rounded-xl border border-hall-200 bg-white p-6">
-          <h2 className="mb-4 text-lg font-bold text-navi-900">Tarneviis</h2>
+          <h2 className="mb-4 text-lg font-bold text-oliiv-900">Tarneviis</h2>
           {olek.vead.tarneviis && (
             <p className="mb-3 text-sm font-medium text-red-600">{olek.vead.tarneviis}</p>
           )}
@@ -173,8 +173,8 @@ export default function KassaVorm({
                 <label
                   className={`flex cursor-pointer items-center gap-3 rounded-lg border p-4 transition ${
                     valitudTarne === viis.kood
-                      ? "border-navi-800 bg-navi-50"
-                      : "border-hall-200 hover:border-navi-600"
+                      ? "border-oliiv-800 bg-oliiv-50"
+                      : "border-hall-200 hover:border-oliiv-600"
                   }`}
                 >
                   <input
@@ -186,12 +186,12 @@ export default function KassaVorm({
                     className="h-4 w-4"
                   />
                   <span className="flex-1">
-                    <span className="block text-sm font-semibold text-navi-800">
+                    <span className="block text-sm font-semibold text-oliiv-800">
                       {viis.nimi}
                     </span>
                     <span className="block text-xs text-hall-600">{viis.kirjeldus}</span>
                   </span>
-                  <span className="text-sm font-bold text-navi-900">
+                  <span className="text-sm font-bold text-oliiv-900">
                     {tasuta ? "0,00 €" : vormindaHind(viis.hindSendid)}
                   </span>
                 </label>
@@ -203,7 +203,7 @@ export default function KassaVorm({
             <p className="mt-5 space-y-1">
               <label
                 htmlFor="tarnepunkt"
-                className="block text-sm font-medium text-navi-800"
+                className="block text-sm font-medium text-oliiv-800"
               >
                 Vali pakiautomaat
               </label>
@@ -214,7 +214,7 @@ export default function KassaVorm({
                 className={`w-full rounded-lg border bg-white px-3 py-2.5 text-sm text-hall-800 focus:outline-none ${
                   olek.vead.tarnepunkt
                     ? "border-red-400"
-                    : "border-hall-200 focus:border-navi-600"
+                    : "border-hall-200 focus:border-oliiv-600"
                 }`}
               >
                 <option value="">— vali pakiautomaat —</option>
@@ -261,14 +261,14 @@ export default function KassaVorm({
         </section>
 
         <section className="rounded-xl border border-hall-200 bg-white p-6">
-          <h2 className="mb-4 text-lg font-bold text-navi-900">Maksmine</h2>
+          <h2 className="mb-4 text-lg font-bold text-oliiv-900">Maksmine</h2>
           <p className="rounded-lg border border-hall-200 bg-hall-50 p-4 text-sm text-hall-800">
             Tellimuse kinnitamisel saadame e-postiga arve koos maksejuhistega.
             Saadame kauba teele kohe pärast makse laekumist.
           </p>
 
           <p className="mt-5 space-y-1">
-            <label htmlFor="markused" className="block text-sm font-medium text-navi-800">
+            <label htmlFor="markused" className="block text-sm font-medium text-oliiv-800">
               Märkused tellimuse kohta (valikuline)
             </label>
             <textarea
@@ -276,7 +276,7 @@ export default function KassaVorm({
               name="markused"
               rows={3}
               defaultValue={olek.väärtused.markused}
-              className="w-full rounded-lg border border-hall-200 bg-white px-3 py-2.5 text-sm text-hall-800 focus:border-navi-600 focus:outline-none"
+              className="w-full rounded-lg border border-hall-200 bg-white px-3 py-2.5 text-sm text-hall-800 focus:border-oliiv-600 focus:outline-none"
             />
           </p>
 
@@ -289,7 +289,7 @@ export default function KassaVorm({
             />
             <span>
               Olen tutvunud{" "}
-              <Link href="/info/tingimused" className="text-navi-600 hover:underline">
+              <Link href="/info/tingimused" className="text-oliiv-600 hover:underline">
                 müügitingimustega
               </Link>{" "}
               ja nõustun nendega.
@@ -304,7 +304,7 @@ export default function KassaVorm({
       </div>
 
       <aside className="h-fit rounded-xl border border-hall-200 bg-white p-6 lg:sticky lg:top-40">
-        <h2 className="mb-4 text-lg font-bold text-navi-900">Sinu tellimus</h2>
+        <h2 className="mb-4 text-lg font-bold text-oliiv-900">Sinu tellimus</h2>
         <ul className="mb-4 space-y-3 border-b border-hall-200 pb-4">
           {read.map((rida) => (
             <li key={rida.võti} className="flex justify-between gap-3 text-sm">
@@ -332,7 +332,7 @@ export default function KassaVorm({
               {tarneSendid === 0 ? "tasuta" : vormindaHind(tarneSendid)}
             </dd>
           </div>
-          <div className="flex justify-between border-t border-hall-200 pt-2 text-base font-bold text-navi-900">
+          <div className="flex justify-between border-t border-hall-200 pt-2 text-base font-bold text-oliiv-900">
             <dt>Kokku</dt>
             <dd>{vormindaHind(kokkuSendid)}</dd>
           </div>

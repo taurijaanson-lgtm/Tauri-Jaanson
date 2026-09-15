@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Filtrivorm from "@/components/Filtrivorm";
+import Ikoon, { type IkooniNimi } from "@/components/illustratsioonid/Ikoonid";
 import Tootekaart from "@/components/Tootekaart";
 import type { Järjestus, Loend } from "@/lib/kataloog";
 import { kogusSõna } from "@/lib/tekst";
@@ -34,6 +35,7 @@ export default function Kataloogivaade({
   loend,
   parameetrid,
   tootjad,
+  ikoon,
 }: {
   pealkiri: string;
   kirjeldus?: string;
@@ -41,6 +43,7 @@ export default function Kataloogivaade({
   loend: Loend;
   parameetrid: KataloogiParameetrid;
   tootjad: string[];
+  ikoon?: IkooniNimi;
 }) {
   const lehed = Array.from({ length: loend.lehti }, (_, i) => i + 1).filter(
     (nr) =>
@@ -51,12 +54,19 @@ export default function Kataloogivaade({
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10">
-      <header className="mb-6">
-        <h1 className="text-3xl font-bold text-navi-900">{pealkiri}</h1>
+      <header className="mb-6 flex items-start gap-4">
+        {ikoon && (
+          <span className="hidden h-16 w-16 shrink-0 items-center justify-center rounded-sm bg-oliiv-800 sm:flex">
+            <Ikoon nimi={ikoon} className="h-10 w-10 text-liiv-400" />
+          </span>
+        )}
+        <div>
+        <h1 className="text-3xl font-bold text-oliiv-900">{pealkiri}</h1>
         {kirjeldus && <p className="mt-2 text-hall-600">{kirjeldus}</p>}
         <p className="mt-1 text-sm text-hall-400">
           {kogusSõna(loend.kokku, "toode", "toodet")}
         </p>
+        </div>
       </header>
 
       <div className="mb-6">
@@ -72,12 +82,12 @@ export default function Kataloogivaade({
 
       {loend.tooted.length === 0 ? (
         <div className="rounded-xl border border-dashed border-hall-200 bg-white p-12 text-center">
-          <h2 className="text-lg font-semibold text-navi-800">
+          <h2 className="text-lg font-semibold text-oliiv-800">
             Ühtegi toodet ei leitud
           </h2>
           <p className="mt-2 text-sm text-hall-600">
             Proovi teist otsingusõna või vaata{" "}
-            <Link href="/tooted" className="font-medium text-navi-600 hover:underline">
+            <Link href="/tooted" className="font-medium text-oliiv-600 hover:underline">
               kogu valikut
             </Link>
             .
@@ -98,7 +108,7 @@ export default function Kataloogivaade({
           {loend.leht > 1 && (
             <Link
               href={lehelink(alusTee, parameetrid, loend.leht - 1)}
-              className="rounded-lg border border-hall-200 bg-white px-3 py-2 text-sm text-navi-800 hover:border-navi-600"
+              className="rounded-lg border border-hall-200 bg-white px-3 py-2 text-sm text-oliiv-800 hover:border-oliiv-600"
             >
               ← Eelmine
             </Link>
@@ -113,8 +123,8 @@ export default function Kataloogivaade({
                 aria-current={nr === loend.leht ? "page" : undefined}
                 className={`rounded-lg border px-4 py-2 text-sm ${
                   nr === loend.leht
-                    ? "border-navi-800 bg-navi-800 font-semibold text-white"
-                    : "border-hall-200 bg-white text-navi-800 hover:border-navi-600"
+                    ? "border-oliiv-800 bg-oliiv-800 font-semibold text-white"
+                    : "border-hall-200 bg-white text-oliiv-800 hover:border-oliiv-600"
                 }`}
               >
                 {nr}
@@ -124,7 +134,7 @@ export default function Kataloogivaade({
           {loend.leht < loend.lehti && (
             <Link
               href={lehelink(alusTee, parameetrid, loend.leht + 1)}
-              className="rounded-lg border border-hall-200 bg-white px-3 py-2 text-sm text-navi-800 hover:border-navi-600"
+              className="rounded-lg border border-hall-200 bg-white px-3 py-2 text-sm text-oliiv-800 hover:border-oliiv-600"
             >
               Järgmine →
             </Link>

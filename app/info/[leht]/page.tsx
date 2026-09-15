@@ -140,13 +140,13 @@ export default async function InfoLeht(props: PageProps<"/info/[leht]">) {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12">
-      <h1 className="text-3xl font-bold text-navi-900">{sisu.pealkiri}</h1>
+      <h1 className="text-3xl font-bold text-oliiv-900">{sisu.pealkiri}</h1>
       <p className="mt-3 text-lg text-hall-600">{sisu.sissejuhatus}</p>
 
       <div className="mt-8 space-y-8">
         {sisu.lõigud.map((lõik) => (
           <section key={lõik.pealkiri}>
-            <h2 className="mb-3 text-xl font-bold text-navi-800">{lõik.pealkiri}</h2>
+            <h2 className="mb-3 text-xl font-bold text-oliiv-800">{lõik.pealkiri}</h2>
             <div className="space-y-2 text-hall-800">
               {lõik.tekst.map((rida) => (
                 <p key={rida} className="leading-relaxed">

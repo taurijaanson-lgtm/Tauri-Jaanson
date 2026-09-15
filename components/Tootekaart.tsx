@@ -8,7 +8,7 @@ export default function Tootekaart({ toode }: { toode: ToodeKaart }) {
   const laos = toode.laoseis > 0;
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-hall-200 bg-white transition hover:border-navi-200 hover:shadow-md">
+    <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-hall-200 bg-white transition hover:border-oliiv-200 hover:shadow-md">
       <Link
         href={`/tooted/${toode.slug}`}
         className="relative block aspect-square overflow-hidden bg-hall-100"
@@ -31,7 +31,7 @@ export default function Tootekaart({ toode }: { toode: ToodeKaart }) {
             {toode.tootja}
           </p>
         )}
-        <h3 className="mb-3 line-clamp-2 text-sm font-semibold leading-snug text-navi-800">
+        <h3 className="mb-3 line-clamp-2 text-sm font-semibold leading-snug text-oliiv-800">
           <Link href={`/tooted/${toode.slug}`} className="hover:underline">
             {toode.nimi}
           </Link>
@@ -39,7 +39,7 @@ export default function Tootekaart({ toode }: { toode: ToodeKaart }) {
 
         <div className="mt-auto flex items-end justify-between gap-2">
           <div>
-            <p className="text-lg font-bold text-navi-900">
+            <p className="text-lg font-bold text-oliiv-900">
               {vormindaHind(toode.hind_sendid)}
             </p>
             <p className="text-xs text-hall-400">koos käibemaksuga</p>

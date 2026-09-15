@@ -17,7 +17,7 @@ export default function Otsinguriba() {
         type="search"
         defaultValue={parameetrid.get("otsing") ?? ""}
         placeholder="Otsi toodet, tootjat või tootekoodi…"
-        className="w-full rounded-lg border border-hall-200 bg-hall-50 py-2.5 pl-10 pr-24 text-sm text-hall-800 placeholder:text-hall-400 focus:border-navi-600 focus:bg-white focus:outline-none"
+        className="w-full rounded-lg border border-hall-200 bg-hall-50 py-2.5 pl-10 pr-24 text-sm text-hall-800 placeholder:text-hall-400 focus:border-oliiv-600 focus:bg-white focus:outline-none"
       />
       <svg
         aria-hidden="true"
@@ -32,7 +32,7 @@ export default function Otsinguriba() {
       </svg>
       <button
         type="submit"
-        className="absolute right-1.5 top-1/2 -translate-y-1/2 rounded-md bg-navi-800 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-navi-700"
+        className="absolute right-1.5 top-1/2 -translate-y-1/2 rounded-md bg-oliiv-800 px-3 py-1.5 text-sm font-medium text-white transition hover:bg-oliiv-700"
       >
         Otsi
       </button>

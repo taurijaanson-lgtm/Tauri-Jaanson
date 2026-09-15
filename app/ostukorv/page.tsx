@@ -18,13 +18,13 @@ export default async function OstukorvLeht() {
   if (korv.tühi) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-20 text-center">
-        <h1 className="text-3xl font-bold text-navi-900">Ostukorv on tühi</h1>
+        <h1 className="text-3xl font-bold text-oliiv-900">Ostukorv on tühi</h1>
         <p className="mt-3 text-hall-600">
           Lisa tooteid ostukorvi, et tellimust vormistada.
         </p>
         <Link
           href="/tooted"
-          className="mt-8 inline-block rounded-lg bg-navi-800 px-6 py-3 font-semibold text-white transition hover:bg-navi-700"
+          className="mt-8 inline-block rounded-lg bg-oliiv-800 px-6 py-3 font-semibold text-white transition hover:bg-oliiv-700"
         >
           Vaata tooteid
         </Link>
@@ -34,7 +34,7 @@ export default async function OstukorvLeht() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="mb-1 text-3xl font-bold text-navi-900">Ostukorv</h1>
+      <h1 className="mb-1 text-3xl font-bold text-oliiv-900">Ostukorv</h1>
       <p className="mb-8 text-sm text-hall-600">
         {kogusSõna(korv.esemeid, "toode", "toodet")} ostukorvis
       </p>
@@ -58,7 +58,7 @@ export default async function OstukorvLeht() {
               </Link>
 
               <div className="min-w-48 flex-1">
-                <h2 className="font-semibold text-navi-800">
+                <h2 className="font-semibold text-oliiv-800">
                   <Link href={`/tooted/${rida.slug}`} className="hover:underline">
                     {rida.nimi}
                   </Link>
@@ -84,7 +84,7 @@ export default async function OstukorvLeht() {
                   <button
                     type="submit"
                     aria-label={`Vähenda kogust: ${rida.nimi}`}
-                    className="h-9 w-9 rounded-lg border border-hall-200 text-lg text-hall-600 hover:border-navi-600"
+                    className="h-9 w-9 rounded-lg border border-hall-200 text-lg text-hall-600 hover:border-oliiv-600"
                   >
                     −
                   </button>
@@ -98,14 +98,14 @@ export default async function OstukorvLeht() {
                     type="submit"
                     disabled={rida.kogus >= rida.laoseis}
                     aria-label={`Suurenda kogust: ${rida.nimi}`}
-                    className="h-9 w-9 rounded-lg border border-hall-200 text-lg text-hall-600 hover:border-navi-600 disabled:cursor-not-allowed disabled:opacity-40"
+                    className="h-9 w-9 rounded-lg border border-hall-200 text-lg text-hall-600 hover:border-oliiv-600 disabled:cursor-not-allowed disabled:opacity-40"
                   >
                     +
                   </button>
                 </form>
               </div>
 
-              <p className="w-24 text-right font-bold text-navi-900">
+              <p className="w-24 text-right font-bold text-oliiv-900">
                 {vormindaHind(rida.summaSendid)}
               </p>
 
@@ -126,7 +126,7 @@ export default async function OstukorvLeht() {
           <div className="flex justify-between">
             <Link
               href="/tooted"
-              className="text-sm font-medium text-navi-600 hover:underline"
+              className="text-sm font-medium text-oliiv-600 hover:underline"
             >
               ← Jätka ostlemist
             </Link>
@@ -142,7 +142,7 @@ export default async function OstukorvLeht() {
         </div>
 
         <aside className="h-fit rounded-xl border border-hall-200 bg-white p-6">
-          <h2 className="mb-4 text-lg font-bold text-navi-900">Kokkuvõte</h2>
+          <h2 className="mb-4 text-lg font-bold text-oliiv-900">Kokkuvõte</h2>
           <dl className="space-y-2 text-sm">
             <div className="flex justify-between">
               <dt className="text-hall-600">Kaubad</dt>
@@ -155,7 +155,7 @@ export default async function OstukorvLeht() {
           </dl>
 
           {korv.tasutaTarneniSendid > 0 ? (
-            <p className="mt-4 rounded-lg bg-navi-50 p-3 text-sm text-navi-700">
+            <p className="mt-4 rounded-lg bg-oliiv-50 p-3 text-sm text-oliiv-700">
               Lisa veel {vormindaHind(korv.tasutaTarneniSendid)} ja tarne on tasuta.
             </p>
           ) : (
@@ -164,14 +164,14 @@ export default async function OstukorvLeht() {
             </p>
           )}
 
-          <div className="mt-4 flex justify-between border-t border-hall-200 pt-4 text-base font-bold text-navi-900">
+          <div className="mt-4 flex justify-between border-t border-hall-200 pt-4 text-base font-bold text-oliiv-900">
             <span>Vahesumma</span>
             <span>{vormindaHind(korv.kaupadeSummaSendid)}</span>
           </div>
 
           <Link
             href="/kassa"
-            className="mt-6 block rounded-lg bg-kollane-500 px-6 py-3 text-center font-bold text-navi-900 transition hover:bg-kollane-400"
+            className="mt-6 block rounded-lg bg-liiv-500 px-6 py-3 text-center font-bold text-oliiv-900 transition hover:bg-liiv-400"
           >
             Vormista tellimus
           </Link>

@@ -43,8 +43,8 @@ export default function Pildigalerii({
                 aria-current={indeks === aktiivne}
                 className={`h-20 w-20 overflow-hidden rounded-lg border-2 transition ${
                   indeks === aktiivne
-                    ? "border-navi-800"
-                    : "border-hall-200 hover:border-navi-600"
+                    ? "border-oliiv-800"
+                    : "border-hall-200 hover:border-oliiv-600"
                 }`}
               >
                 <Toodepilt url={pilt} alt="" klass="h-full w-full object-cover" />
