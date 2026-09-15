@@ -1,0 +1,2274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produkty>
+  <produkt>
+    <id>SP-1001</id>
+    <sku>SP-1001</sku>
+    <kzs>5909903400014</kzs>
+    <ean>5901203400015</ean>
+    <producent><![CDATA[Lahti Pro]]></producent>
+    <nazwa><![CDATA[Spodnie robocze do pasa PREMIUM]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Wytrzymałe spodnie robocze z tkaniny 65% poliester / 35% bawełna, gramatura 260 g/m². Wzmocnienia na kolanach, sześć kieszeni.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Spodnie robocze</kategoria>
+    <waga>0.75</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1001-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1001-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1001-S</wariant_id>
+        <wariant_sku>SP-1001-S</wariant_sku>
+        <wariant_ean>5901205000206</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[S]]></wariant_wartosc>
+        <wariant_stan_magazynowy>23</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1001-M</wariant_id>
+        <wariant_sku>SP-1001-M</wariant_sku>
+        <wariant_ean>5901205000213</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>17</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1001-L</wariant_id>
+        <wariant_sku>SP-1001-L</wariant_sku>
+        <wariant_ean>5901205000220</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>19</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1001-XL</wariant_id>
+        <wariant_sku>SP-1001-XL</wariant_sku>
+        <wariant_ean>5901205000237</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>12</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1001-XXL</wariant_id>
+        <wariant_sku>SP-1001-XXL</wariant_sku>
+        <wariant_ean>5901205000244</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>20</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>91</stan_magazynowy>
+    <cena_zewnetrzna>129.90</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>93.53</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1002</id>
+    <sku>SP-1002</sku>
+    <kzs>5909903400021</kzs>
+    <ean>5901203400022</ean>
+    <producent><![CDATA[Lahti Pro]]></producent>
+    <nazwa><![CDATA[Spodnie robocze do pasa PREMIUM CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Wytrzymałe spodnie robocze z tkaniny 65% poliester / 35% bawełna, gramatura 260 g/m². Wzmocnienia na kolanach, sześć kieszeni.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Spodnie robocze</kategoria>
+    <waga>0.75</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1002-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1002-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1002-S</wariant_id>
+        <wariant_sku>SP-1002-S</wariant_sku>
+        <wariant_ean>5901205000404</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[S]]></wariant_wartosc>
+        <wariant_stan_magazynowy>20</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1002-M</wariant_id>
+        <wariant_sku>SP-1002-M</wariant_sku>
+        <wariant_ean>5901205000411</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>10</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1002-L</wariant_id>
+        <wariant_sku>SP-1002-L</wariant_sku>
+        <wariant_ean>5901205000428</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>3</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1002-XL</wariant_id>
+        <wariant_sku>SP-1002-XL</wariant_sku>
+        <wariant_ean>5901205000435</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>9</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1002-XXL</wariant_id>
+        <wariant_sku>SP-1002-XXL</wariant_sku>
+        <wariant_ean>5901205000442</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>12</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>54</stan_magazynowy>
+    <cena_zewnetrzna>145.49</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>104.75</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1011</id>
+    <sku>SP-1011</sku>
+    <kzs>5909903400113</kzs>
+    <ean>5901203400114</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Spodnie ogrodniczki HD]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Ogrodniczki z regulowanymi szelkami i kieszenią na miarę. Materiał odporny na rozdarcia.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Spodnie robocze</kategoria>
+    <waga>0.90</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1011-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1011-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1011-M</wariant_id>
+        <wariant_sku>SP-1011-M</wariant_sku>
+        <wariant_ean>5901205002200</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1011-L</wariant_id>
+        <wariant_sku>SP-1011-L</wariant_sku>
+        <wariant_ean>5901205002217</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>11</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1011-XL</wariant_id>
+        <wariant_sku>SP-1011-XL</wariant_sku>
+        <wariant_ean>5901205002224</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>13</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1011-XXL</wariant_id>
+        <wariant_sku>SP-1011-XXL</wariant_sku>
+        <wariant_ean>5901205002231</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>14</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>38</stan_magazynowy>
+    <cena_zewnetrzna>179.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>128.88</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1012</id>
+    <sku>SP-1012</sku>
+    <kzs>5909903400120</kzs>
+    <ean>5901203400121</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Spodnie ogrodniczki HD CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Ogrodniczki z regulowanymi szelkami i kieszenią na miarę. Materiał odporny na rozdarcia.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Spodnie robocze</kategoria>
+    <waga>0.90</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1012-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1012-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1012-M</wariant_id>
+        <wariant_sku>SP-1012-M</wariant_sku>
+        <wariant_ean>5901205002408</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>3</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1012-L</wariant_id>
+        <wariant_sku>SP-1012-L</wariant_sku>
+        <wariant_ean>5901205002415</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>14</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1012-XL</wariant_id>
+        <wariant_sku>SP-1012-XL</wariant_sku>
+        <wariant_ean>5901205002422</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1012-XXL</wariant_id>
+        <wariant_sku>SP-1012-XXL</wariant_sku>
+        <wariant_ean>5901205002439</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>2</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>19</stan_magazynowy>
+    <cena_zewnetrzna>200.48</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>144.35</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1013</id>
+    <sku>SP-1013</sku>
+    <kzs>5909903400137</kzs>
+    <ean>5901203400138</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Spodnie ogrodniczki HD PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Ogrodniczki z regulowanymi szelkami i kieszenią na miarę. Materiał odporny na rozdarcia.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Spodnie robocze</kategoria>
+    <waga>0.90</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1013-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1013-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1013-M</wariant_id>
+        <wariant_sku>SP-1013-M</wariant_sku>
+        <wariant_ean>5901205002606</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>5</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1013-L</wariant_id>
+        <wariant_sku>SP-1013-L</wariant_sku>
+        <wariant_ean>5901205002613</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>17</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1013-XL</wariant_id>
+        <wariant_sku>SP-1013-XL</wariant_sku>
+        <wariant_ean>5901205002620</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>18</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1013-XXL</wariant_id>
+        <wariant_sku>SP-1013-XXL</wariant_sku>
+        <wariant_ean>5901205002637</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>5</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>45</stan_magazynowy>
+    <cena_zewnetrzna>221.96</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>159.81</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1014</id>
+    <sku>SP-1014</sku>
+    <kzs>5909903400144</kzs>
+    <ean>5901203400145</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Spodnie ogrodniczki HD ECO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Ogrodniczki z regulowanymi szelkami i kieszenią na miarę. Materiał odporny na rozdarcia.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Spodnie robocze</kategoria>
+    <waga>0.90</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1014-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1014-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1014-M</wariant_id>
+        <wariant_sku>SP-1014-M</wariant_sku>
+        <wariant_ean>5901205002804</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>1</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1014-L</wariant_id>
+        <wariant_sku>SP-1014-L</wariant_sku>
+        <wariant_ean>5901205002811</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>13</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1014-XL</wariant_id>
+        <wariant_sku>SP-1014-XL</wariant_sku>
+        <wariant_ean>5901205002828</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>8</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1014-XXL</wariant_id>
+        <wariant_sku>SP-1014-XXL</wariant_sku>
+        <wariant_ean>5901205002835</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>22</stan_magazynowy>
+    <cena_zewnetrzna>243.44</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>175.28</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1021</id>
+    <sku>SP-1021</sku>
+    <kzs>5909903400212</kzs>
+    <ean>5901203400213</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Kurtka robocza ocieplana WINTER]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Kurtka ocieplana z odpinanym kapturem, elementy odblaskowe, wodoodporna powłoka.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Kurtki robocze</kategoria>
+    <waga>1.40</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1021-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1021-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1021-M</wariant_id>
+        <wariant_sku>SP-1021-M</wariant_sku>
+        <wariant_ean>5901205004204</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>7</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1021-L</wariant_id>
+        <wariant_sku>SP-1021-L</wariant_sku>
+        <wariant_ean>5901205004211</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>16</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1021-XL</wariant_id>
+        <wariant_sku>SP-1021-XL</wariant_sku>
+        <wariant_ean>5901205004228</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>21</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1021-XXL</wariant_id>
+        <wariant_sku>SP-1021-XXL</wariant_sku>
+        <wariant_ean>5901205004235</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>11</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1021-3XL</wariant_id>
+        <wariant_sku>SP-1021-3XL</wariant_sku>
+        <wariant_ean>5901205004242</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[3XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>1</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>56</stan_magazynowy>
+    <cena_zewnetrzna>259.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>186.48</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1022</id>
+    <sku>SP-1022</sku>
+    <kzs>5909903400229</kzs>
+    <ean>5901203400220</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Kurtka robocza ocieplana WINTER CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Kurtka ocieplana z odpinanym kapturem, elementy odblaskowe, wodoodporna powłoka.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Kurtki robocze</kategoria>
+    <waga>1.40</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1022-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1022-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1022-M</wariant_id>
+        <wariant_sku>SP-1022-M</wariant_sku>
+        <wariant_ean>5901205004402</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>4</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1022-L</wariant_id>
+        <wariant_sku>SP-1022-L</wariant_sku>
+        <wariant_ean>5901205004419</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>24</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1022-XL</wariant_id>
+        <wariant_sku>SP-1022-XL</wariant_sku>
+        <wariant_ean>5901205004426</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>23</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1022-XXL</wariant_id>
+        <wariant_sku>SP-1022-XXL</wariant_sku>
+        <wariant_ean>5901205004433</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>12</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1022-3XL</wariant_id>
+        <wariant_sku>SP-1022-3XL</wariant_sku>
+        <wariant_ean>5901205004440</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[3XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>8</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>71</stan_magazynowy>
+    <cena_zewnetrzna>290.08</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>208.86</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1023</id>
+    <sku>SP-1023</sku>
+    <kzs>5909903400236</kzs>
+    <ean>5901203400237</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Kurtka robocza ocieplana WINTER PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Kurtka ocieplana z odpinanym kapturem, elementy odblaskowe, wodoodporna powłoka.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Kurtki robocze</kategoria>
+    <waga>1.40</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1023-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1023-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1023-M</wariant_id>
+        <wariant_sku>SP-1023-M</wariant_sku>
+        <wariant_ean>5901205004600</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>12</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1023-L</wariant_id>
+        <wariant_sku>SP-1023-L</wariant_sku>
+        <wariant_ean>5901205004617</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>12</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1023-XL</wariant_id>
+        <wariant_sku>SP-1023-XL</wariant_sku>
+        <wariant_ean>5901205004624</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>2</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1023-XXL</wariant_id>
+        <wariant_sku>SP-1023-XXL</wariant_sku>
+        <wariant_ean>5901205004631</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>21</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1023-3XL</wariant_id>
+        <wariant_sku>SP-1023-3XL</wariant_sku>
+        <wariant_ean>5901205004648</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[3XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>20</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>67</stan_magazynowy>
+    <cena_zewnetrzna>321.16</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>231.24</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1031</id>
+    <sku>SP-1031</sku>
+    <kzs>5909903400311</kzs>
+    <ean>5901203400312</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Koszulka T-shirt robocza bawełniana]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Koszulka z bawełny czesanej 180 g/m², wzmocniony dekolt.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Koszulki</kategoria>
+    <waga>0.20</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1031-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1031-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1031-S</wariant_id>
+        <wariant_sku>SP-1031-S</wariant_sku>
+        <wariant_ean>5901205006208</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[S]]></wariant_wartosc>
+        <wariant_stan_magazynowy>7</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1031-M</wariant_id>
+        <wariant_sku>SP-1031-M</wariant_sku>
+        <wariant_ean>5901205006215</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>5</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1031-L</wariant_id>
+        <wariant_sku>SP-1031-L</wariant_sku>
+        <wariant_ean>5901205006222</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>18</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1031-XL</wariant_id>
+        <wariant_sku>SP-1031-XL</wariant_sku>
+        <wariant_ean>5901205006239</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>14</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1031-XXL</wariant_id>
+        <wariant_sku>SP-1031-XXL</wariant_sku>
+        <wariant_ean>5901205006246</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>19</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>63</stan_magazynowy>
+    <cena_zewnetrzna>39.90</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>28.73</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1032</id>
+    <sku>SP-1032</sku>
+    <kzs>5909903400328</kzs>
+    <ean>5901203400329</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Koszulka T-shirt robocza bawełniana CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Koszulka z bawełny czesanej 180 g/m², wzmocniony dekolt.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Koszulki</kategoria>
+    <waga>0.20</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1032-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1032-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1032-S</wariant_id>
+        <wariant_sku>SP-1032-S</wariant_sku>
+        <wariant_ean>5901205006406</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[S]]></wariant_wartosc>
+        <wariant_stan_magazynowy>9</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1032-M</wariant_id>
+        <wariant_sku>SP-1032-M</wariant_sku>
+        <wariant_ean>5901205006413</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>23</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1032-L</wariant_id>
+        <wariant_sku>SP-1032-L</wariant_sku>
+        <wariant_ean>5901205006420</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>3</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1032-XL</wariant_id>
+        <wariant_sku>SP-1032-XL</wariant_sku>
+        <wariant_ean>5901205006437</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>10</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1032-XXL</wariant_id>
+        <wariant_sku>SP-1032-XXL</wariant_sku>
+        <wariant_ean>5901205006444</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>11</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>56</stan_magazynowy>
+    <cena_zewnetrzna>44.69</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>32.18</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1033</id>
+    <sku>SP-1033</sku>
+    <kzs>5909903400335</kzs>
+    <ean>5901203400336</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Koszulka T-shirt robocza bawełniana PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Koszulka z bawełny czesanej 180 g/m², wzmocniony dekolt.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Koszulki</kategoria>
+    <waga>0.20</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1033-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1033-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1033-S</wariant_id>
+        <wariant_sku>SP-1033-S</wariant_sku>
+        <wariant_ean>5901205006604</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[S]]></wariant_wartosc>
+        <wariant_stan_magazynowy>17</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1033-M</wariant_id>
+        <wariant_sku>SP-1033-M</wariant_sku>
+        <wariant_ean>5901205006611</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>23</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1033-L</wariant_id>
+        <wariant_sku>SP-1033-L</wariant_sku>
+        <wariant_ean>5901205006628</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1033-XL</wariant_id>
+        <wariant_sku>SP-1033-XL</wariant_sku>
+        <wariant_ean>5901205006635</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>1</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1033-XXL</wariant_id>
+        <wariant_sku>SP-1033-XXL</wariant_sku>
+        <wariant_ean>5901205006642</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>13</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>54</stan_magazynowy>
+    <cena_zewnetrzna>49.48</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>35.63</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1034</id>
+    <sku>SP-1034</sku>
+    <kzs>5909903400342</kzs>
+    <ean>5901203400343</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Koszulka T-shirt robocza bawełniana ECO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Koszulka z bawełny czesanej 180 g/m², wzmocniony dekolt.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Koszulki</kategoria>
+    <waga>0.20</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1034-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1034-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1034-S</wariant_id>
+        <wariant_sku>SP-1034-S</wariant_sku>
+        <wariant_ean>5901205006802</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[S]]></wariant_wartosc>
+        <wariant_stan_magazynowy>8</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1034-M</wariant_id>
+        <wariant_sku>SP-1034-M</wariant_sku>
+        <wariant_ean>5901205006819</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>14</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1034-L</wariant_id>
+        <wariant_sku>SP-1034-L</wariant_sku>
+        <wariant_ean>5901205006826</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>19</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1034-XL</wariant_id>
+        <wariant_sku>SP-1034-XL</wariant_sku>
+        <wariant_ean>5901205006833</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>15</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1034-XXL</wariant_id>
+        <wariant_sku>SP-1034-XXL</wariant_sku>
+        <wariant_ean>5901205006840</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XXL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>23</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>79</stan_magazynowy>
+    <cena_zewnetrzna>54.26</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>39.07</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1041</id>
+    <sku>SP-1041</sku>
+    <kzs>5909903400410</kzs>
+    <ean>5901203400411</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Kamizelka ostrzegawcza EN ISO 20471]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Kamizelka ostrzegawcza klasy 2, zapinana na rzep, dwa pasy odblaskowe.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Odzież ostrzegawcza</kategoria>
+    <waga>0.15</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1041-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1041-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1041-M</wariant_id>
+        <wariant_sku>SP-1041-M</wariant_sku>
+        <wariant_ean>5901205008202</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>21</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1041-L</wariant_id>
+        <wariant_sku>SP-1041-L</wariant_sku>
+        <wariant_ean>5901205008219</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>1</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1041-XL</wariant_id>
+        <wariant_sku>SP-1041-XL</wariant_sku>
+        <wariant_ean>5901205008226</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>7</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>29</stan_magazynowy>
+    <cena_zewnetrzna>24.50</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>17.64</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1042</id>
+    <sku>SP-1042</sku>
+    <kzs>5909903400427</kzs>
+    <ean>5901203400428</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Kamizelka ostrzegawcza EN ISO 20471 CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Kamizelka ostrzegawcza klasy 2, zapinana na rzep, dwa pasy odblaskowe.</p>]]></dlugi_opis>
+    <kategoria>Odzież robocza/Odzież ostrzegawcza</kategoria>
+    <waga>0.15</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1042-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1042-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1042-M</wariant_id>
+        <wariant_sku>SP-1042-M</wariant_sku>
+        <wariant_ean>5901205008400</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[M]]></wariant_wartosc>
+        <wariant_stan_magazynowy>13</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1042-L</wariant_id>
+        <wariant_sku>SP-1042-L</wariant_sku>
+        <wariant_ean>5901205008417</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[L]]></wariant_wartosc>
+        <wariant_stan_magazynowy>14</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1042-XL</wariant_id>
+        <wariant_sku>SP-1042-XL</wariant_sku>
+        <wariant_ean>5901205008424</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[XL]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>27</stan_magazynowy>
+    <cena_zewnetrzna>27.44</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>19.76</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1051</id>
+    <sku>SP-1051</sku>
+    <kzs>5909903400519</kzs>
+    <ean>5901203400510</ean>
+    <producent><![CDATA[Lahti Pro]]></producent>
+    <nazwa><![CDATA[Buty robocze S3 SRC z podnoskiem kompozytowym]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Buty robocze w klasie S3, podnosek kompozytowy 200 J, wkładka antyprzebiciowa, podeszwa olejoodporna.</p>]]></dlugi_opis>
+    <kategoria>Obuwie robocze/Buty robocze</kategoria>
+    <waga>1.20</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1051-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1051-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1051-39</wariant_id>
+        <wariant_sku>SP-1051-39</wariant_sku>
+        <wariant_ean>5901205010205</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[39]]></wariant_wartosc>
+        <wariant_stan_magazynowy>19</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1051-40</wariant_id>
+        <wariant_sku>SP-1051-40</wariant_sku>
+        <wariant_ean>5901205010212</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[40]]></wariant_wartosc>
+        <wariant_stan_magazynowy>17</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1051-41</wariant_id>
+        <wariant_sku>SP-1051-41</wariant_sku>
+        <wariant_ean>5901205010229</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[41]]></wariant_wartosc>
+        <wariant_stan_magazynowy>16</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1051-42</wariant_id>
+        <wariant_sku>SP-1051-42</wariant_sku>
+        <wariant_ean>5901205010236</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[42]]></wariant_wartosc>
+        <wariant_stan_magazynowy>12</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1051-43</wariant_id>
+        <wariant_sku>SP-1051-43</wariant_sku>
+        <wariant_ean>5901205010243</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[43]]></wariant_wartosc>
+        <wariant_stan_magazynowy>1</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1051-44</wariant_id>
+        <wariant_sku>SP-1051-44</wariant_sku>
+        <wariant_ean>5901205010250</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[44]]></wariant_wartosc>
+        <wariant_stan_magazynowy>1</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1051-45</wariant_id>
+        <wariant_sku>SP-1051-45</wariant_sku>
+        <wariant_ean>5901205010267</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[45]]></wariant_wartosc>
+        <wariant_stan_magazynowy>24</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1051-46</wariant_id>
+        <wariant_sku>SP-1051-46</wariant_sku>
+        <wariant_ean>5901205010274</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[46]]></wariant_wartosc>
+        <wariant_stan_magazynowy>6</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>96</stan_magazynowy>
+    <cena_zewnetrzna>249.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>179.28</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1052</id>
+    <sku>SP-1052</sku>
+    <kzs>5909903400526</kzs>
+    <ean>5901203400527</ean>
+    <producent><![CDATA[Lahti Pro]]></producent>
+    <nazwa><![CDATA[Buty robocze S3 SRC z podnoskiem kompozytowym CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Buty robocze w klasie S3, podnosek kompozytowy 200 J, wkładka antyprzebiciowa, podeszwa olejoodporna.</p>]]></dlugi_opis>
+    <kategoria>Obuwie robocze/Buty robocze</kategoria>
+    <waga>1.20</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1052-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1052-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1052-39</wariant_id>
+        <wariant_sku>SP-1052-39</wariant_sku>
+        <wariant_ean>5901205010403</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[39]]></wariant_wartosc>
+        <wariant_stan_magazynowy>17</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1052-40</wariant_id>
+        <wariant_sku>SP-1052-40</wariant_sku>
+        <wariant_ean>5901205010410</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[40]]></wariant_wartosc>
+        <wariant_stan_magazynowy>17</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1052-41</wariant_id>
+        <wariant_sku>SP-1052-41</wariant_sku>
+        <wariant_ean>5901205010427</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[41]]></wariant_wartosc>
+        <wariant_stan_magazynowy>6</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1052-42</wariant_id>
+        <wariant_sku>SP-1052-42</wariant_sku>
+        <wariant_ean>5901205010434</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[42]]></wariant_wartosc>
+        <wariant_stan_magazynowy>12</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1052-43</wariant_id>
+        <wariant_sku>SP-1052-43</wariant_sku>
+        <wariant_ean>5901205010441</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[43]]></wariant_wartosc>
+        <wariant_stan_magazynowy>1</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1052-44</wariant_id>
+        <wariant_sku>SP-1052-44</wariant_sku>
+        <wariant_ean>5901205010458</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[44]]></wariant_wartosc>
+        <wariant_stan_magazynowy>10</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1052-45</wariant_id>
+        <wariant_sku>SP-1052-45</wariant_sku>
+        <wariant_ean>5901205010465</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[45]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1052-46</wariant_id>
+        <wariant_sku>SP-1052-46</wariant_sku>
+        <wariant_ean>5901205010472</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[46]]></wariant_wartosc>
+        <wariant_stan_magazynowy>6</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>69</stan_magazynowy>
+    <cena_zewnetrzna>278.88</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>200.79</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1053</id>
+    <sku>SP-1053</sku>
+    <kzs>5909903400533</kzs>
+    <ean>5901203400534</ean>
+    <producent><![CDATA[Lahti Pro]]></producent>
+    <nazwa><![CDATA[Buty robocze S3 SRC z podnoskiem kompozytowym PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Buty robocze w klasie S3, podnosek kompozytowy 200 J, wkładka antyprzebiciowa, podeszwa olejoodporna.</p>]]></dlugi_opis>
+    <kategoria>Obuwie robocze/Buty robocze</kategoria>
+    <waga>1.20</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1053-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1053-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1053-39</wariant_id>
+        <wariant_sku>SP-1053-39</wariant_sku>
+        <wariant_ean>5901205010601</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[39]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1053-40</wariant_id>
+        <wariant_sku>SP-1053-40</wariant_sku>
+        <wariant_ean>5901205010618</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[40]]></wariant_wartosc>
+        <wariant_stan_magazynowy>20</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1053-41</wariant_id>
+        <wariant_sku>SP-1053-41</wariant_sku>
+        <wariant_ean>5901205010625</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[41]]></wariant_wartosc>
+        <wariant_stan_magazynowy>5</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1053-42</wariant_id>
+        <wariant_sku>SP-1053-42</wariant_sku>
+        <wariant_ean>5901205010632</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[42]]></wariant_wartosc>
+        <wariant_stan_magazynowy>23</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1053-43</wariant_id>
+        <wariant_sku>SP-1053-43</wariant_sku>
+        <wariant_ean>5901205010649</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[43]]></wariant_wartosc>
+        <wariant_stan_magazynowy>12</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1053-44</wariant_id>
+        <wariant_sku>SP-1053-44</wariant_sku>
+        <wariant_ean>5901205010656</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[44]]></wariant_wartosc>
+        <wariant_stan_magazynowy>10</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1053-45</wariant_id>
+        <wariant_sku>SP-1053-45</wariant_sku>
+        <wariant_ean>5901205010663</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[45]]></wariant_wartosc>
+        <wariant_stan_magazynowy>10</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1053-46</wariant_id>
+        <wariant_sku>SP-1053-46</wariant_sku>
+        <wariant_ean>5901205010670</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[46]]></wariant_wartosc>
+        <wariant_stan_magazynowy>4</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>84</stan_magazynowy>
+    <cena_zewnetrzna>308.76</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>222.31</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1061</id>
+    <sku>SP-1061</sku>
+    <kzs>5909903400618</kzs>
+    <ean>5901203400619</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Trzewiki robocze zimowe S3 CI]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Ocieplane trzewiki zimowe, izolacja od zimna CI, stalowy podnosek.</p>]]></dlugi_opis>
+    <kategoria>Obuwie robocze/Trzewiki</kategoria>
+    <waga>1.60</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1061-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1061-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1061-40</wariant_id>
+        <wariant_sku>SP-1061-40</wariant_sku>
+        <wariant_ean>5901205012209</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[40]]></wariant_wartosc>
+        <wariant_stan_magazynowy>19</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1061-41</wariant_id>
+        <wariant_sku>SP-1061-41</wariant_sku>
+        <wariant_ean>5901205012216</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[41]]></wariant_wartosc>
+        <wariant_stan_magazynowy>20</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1061-42</wariant_id>
+        <wariant_sku>SP-1061-42</wariant_sku>
+        <wariant_ean>5901205012223</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[42]]></wariant_wartosc>
+        <wariant_stan_magazynowy>23</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1061-43</wariant_id>
+        <wariant_sku>SP-1061-43</wariant_sku>
+        <wariant_ean>5901205012230</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[43]]></wariant_wartosc>
+        <wariant_stan_magazynowy>8</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1061-44</wariant_id>
+        <wariant_sku>SP-1061-44</wariant_sku>
+        <wariant_ean>5901205012247</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[44]]></wariant_wartosc>
+        <wariant_stan_magazynowy>11</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1061-45</wariant_id>
+        <wariant_sku>SP-1061-45</wariant_sku>
+        <wariant_ean>5901205012254</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[45]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>81</stan_magazynowy>
+    <cena_zewnetrzna>319.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>229.68</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1062</id>
+    <sku>SP-1062</sku>
+    <kzs>5909903400625</kzs>
+    <ean>5901203400626</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Trzewiki robocze zimowe S3 CI CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Ocieplane trzewiki zimowe, izolacja od zimna CI, stalowy podnosek.</p>]]></dlugi_opis>
+    <kategoria>Obuwie robocze/Trzewiki</kategoria>
+    <waga>1.60</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1062-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1062-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1062-40</wariant_id>
+        <wariant_sku>SP-1062-40</wariant_sku>
+        <wariant_ean>5901205012407</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[40]]></wariant_wartosc>
+        <wariant_stan_magazynowy>7</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1062-41</wariant_id>
+        <wariant_sku>SP-1062-41</wariant_sku>
+        <wariant_ean>5901205012414</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[41]]></wariant_wartosc>
+        <wariant_stan_magazynowy>10</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1062-42</wariant_id>
+        <wariant_sku>SP-1062-42</wariant_sku>
+        <wariant_ean>5901205012421</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[42]]></wariant_wartosc>
+        <wariant_stan_magazynowy>15</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1062-43</wariant_id>
+        <wariant_sku>SP-1062-43</wariant_sku>
+        <wariant_ean>5901205012438</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[43]]></wariant_wartosc>
+        <wariant_stan_magazynowy>2</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1062-44</wariant_id>
+        <wariant_sku>SP-1062-44</wariant_sku>
+        <wariant_ean>5901205012445</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[44]]></wariant_wartosc>
+        <wariant_stan_magazynowy>4</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1062-45</wariant_id>
+        <wariant_sku>SP-1062-45</wariant_sku>
+        <wariant_ean>5901205012452</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[45]]></wariant_wartosc>
+        <wariant_stan_magazynowy>6</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>44</stan_magazynowy>
+    <cena_zewnetrzna>357.28</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>257.24</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1071</id>
+    <sku>SP-1071</sku>
+    <kzs>5909903400717</kzs>
+    <ean>5901203400718</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Wkładki do butów roboczych antybakteryjne]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Wkładki z węglem aktywnym, do przycięcia.</p>]]></dlugi_opis>
+    <kategoria>Obuwie robocze/Wkładki i akcesoria</kategoria>
+    <waga>0.10</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1071-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1071-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1071-41</wariant_id>
+        <wariant_sku>SP-1071-41</wariant_sku>
+        <wariant_ean>5901205014203</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[41]]></wariant_wartosc>
+        <wariant_stan_magazynowy>13</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1071-43</wariant_id>
+        <wariant_sku>SP-1071-43</wariant_sku>
+        <wariant_ean>5901205014210</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[43]]></wariant_wartosc>
+        <wariant_stan_magazynowy>7</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1071-45</wariant_id>
+        <wariant_sku>SP-1071-45</wariant_sku>
+        <wariant_ean>5901205014227</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[45]]></wariant_wartosc>
+        <wariant_stan_magazynowy>5</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>25</stan_magazynowy>
+    <cena_zewnetrzna>19.90</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>14.33</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1072</id>
+    <sku>SP-1072</sku>
+    <kzs>5909903400724</kzs>
+    <ean>5901203400725</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Wkładki do butów roboczych antybakteryjne CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Wkładki z węglem aktywnym, do przycięcia.</p>]]></dlugi_opis>
+    <kategoria>Obuwie robocze/Wkładki i akcesoria</kategoria>
+    <waga>0.10</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1072-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1072-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1072-41</wariant_id>
+        <wariant_sku>SP-1072-41</wariant_sku>
+        <wariant_ean>5901205014401</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[41]]></wariant_wartosc>
+        <wariant_stan_magazynowy>20</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1072-43</wariant_id>
+        <wariant_sku>SP-1072-43</wariant_sku>
+        <wariant_ean>5901205014418</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[43]]></wariant_wartosc>
+        <wariant_stan_magazynowy>14</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1072-45</wariant_id>
+        <wariant_sku>SP-1072-45</wariant_sku>
+        <wariant_ean>5901205014425</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[45]]></wariant_wartosc>
+        <wariant_stan_magazynowy>13</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>47</stan_magazynowy>
+    <cena_zewnetrzna>22.29</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>16.05</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1081</id>
+    <sku>SP-1081</sku>
+    <kzs>5909903400816</kzs>
+    <ean>5901203400817</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Rękawice robocze powlekane nitrylem]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Rękawice dziane powlekane nitrylem, bardzo dobra chwytność, EN 388.</p>]]></dlugi_opis>
+    <kategoria>Ochrona rąk/Rękawice robocze</kategoria>
+    <waga>0.08</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1081-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1081-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1081-8</wariant_id>
+        <wariant_sku>SP-1081-8</wariant_sku>
+        <wariant_ean>5901205016207</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[8]]></wariant_wartosc>
+        <wariant_stan_magazynowy>15</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1081-9</wariant_id>
+        <wariant_sku>SP-1081-9</wariant_sku>
+        <wariant_ean>5901205016214</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[9]]></wariant_wartosc>
+        <wariant_stan_magazynowy>16</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1081-10</wariant_id>
+        <wariant_sku>SP-1081-10</wariant_sku>
+        <wariant_ean>5901205016221</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[10]]></wariant_wartosc>
+        <wariant_stan_magazynowy>1</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1081-11</wariant_id>
+        <wariant_sku>SP-1081-11</wariant_sku>
+        <wariant_ean>5901205016238</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[11]]></wariant_wartosc>
+        <wariant_stan_magazynowy>10</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>42</stan_magazynowy>
+    <cena_zewnetrzna>12.90</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>9.29</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1082</id>
+    <sku>SP-1082</sku>
+    <kzs>5909903400823</kzs>
+    <ean>5901203400824</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Rękawice robocze powlekane nitrylem CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Rękawice dziane powlekane nitrylem, bardzo dobra chwytność, EN 388.</p>]]></dlugi_opis>
+    <kategoria>Ochrona rąk/Rękawice robocze</kategoria>
+    <waga>0.08</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1082-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1082-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1082-8</wariant_id>
+        <wariant_sku>SP-1082-8</wariant_sku>
+        <wariant_ean>5901205016405</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[8]]></wariant_wartosc>
+        <wariant_stan_magazynowy>8</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1082-9</wariant_id>
+        <wariant_sku>SP-1082-9</wariant_sku>
+        <wariant_ean>5901205016412</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[9]]></wariant_wartosc>
+        <wariant_stan_magazynowy>19</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1082-10</wariant_id>
+        <wariant_sku>SP-1082-10</wariant_sku>
+        <wariant_ean>5901205016429</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[10]]></wariant_wartosc>
+        <wariant_stan_magazynowy>18</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1082-11</wariant_id>
+        <wariant_sku>SP-1082-11</wariant_sku>
+        <wariant_ean>5901205016436</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[11]]></wariant_wartosc>
+        <wariant_stan_magazynowy>3</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>48</stan_magazynowy>
+    <cena_zewnetrzna>14.45</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>10.40</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1083</id>
+    <sku>SP-1083</sku>
+    <kzs>5909903400830</kzs>
+    <ean>5901203400831</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Rękawice robocze powlekane nitrylem PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Rękawice dziane powlekane nitrylem, bardzo dobra chwytność, EN 388.</p>]]></dlugi_opis>
+    <kategoria>Ochrona rąk/Rękawice robocze</kategoria>
+    <waga>0.08</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1083-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1083-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1083-8</wariant_id>
+        <wariant_sku>SP-1083-8</wariant_sku>
+        <wariant_ean>5901205016603</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[8]]></wariant_wartosc>
+        <wariant_stan_magazynowy>11</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1083-9</wariant_id>
+        <wariant_sku>SP-1083-9</wariant_sku>
+        <wariant_ean>5901205016610</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[9]]></wariant_wartosc>
+        <wariant_stan_magazynowy>22</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1083-10</wariant_id>
+        <wariant_sku>SP-1083-10</wariant_sku>
+        <wariant_ean>5901205016627</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[10]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1083-11</wariant_id>
+        <wariant_sku>SP-1083-11</wariant_sku>
+        <wariant_ean>5901205016634</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[11]]></wariant_wartosc>
+        <wariant_stan_magazynowy>13</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>46</stan_magazynowy>
+    <cena_zewnetrzna>16.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>11.52</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1084</id>
+    <sku>SP-1084</sku>
+    <kzs>5909903400847</kzs>
+    <ean>5901203400848</ean>
+    <producent><![CDATA[Reis]]></producent>
+    <nazwa><![CDATA[Rękawice robocze powlekane nitrylem ECO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Rękawice dziane powlekane nitrylem, bardzo dobra chwytność, EN 388.</p>]]></dlugi_opis>
+    <kategoria>Ochrona rąk/Rękawice robocze</kategoria>
+    <waga>0.08</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1084-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1084-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1084-8</wariant_id>
+        <wariant_sku>SP-1084-8</wariant_sku>
+        <wariant_ean>5901205016801</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[8]]></wariant_wartosc>
+        <wariant_stan_magazynowy>11</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1084-9</wariant_id>
+        <wariant_sku>SP-1084-9</wariant_sku>
+        <wariant_ean>5901205016818</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[9]]></wariant_wartosc>
+        <wariant_stan_magazynowy>5</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1084-10</wariant_id>
+        <wariant_sku>SP-1084-10</wariant_sku>
+        <wariant_ean>5901205016825</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[10]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1084-11</wariant_id>
+        <wariant_sku>SP-1084-11</wariant_sku>
+        <wariant_ean>5901205016832</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[11]]></wariant_wartosc>
+        <wariant_stan_magazynowy>8</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>24</stan_magazynowy>
+    <cena_zewnetrzna>17.54</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>12.63</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1091</id>
+    <sku>SP-1091</sku>
+    <kzs>5909903400915</kzs>
+    <ean>5901203400916</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Rękawice antyprzecięciowe poziom C]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Rękawice z włóknem HPPE, odporność na przecięcie poziom C.</p>]]></dlugi_opis>
+    <kategoria>Ochrona rąk/Rękawice antyprzecięciowe</kategoria>
+    <waga>0.09</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1091-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1091-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1091-8</wariant_id>
+        <wariant_sku>SP-1091-8</wariant_sku>
+        <wariant_ean>5901205018201</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[8]]></wariant_wartosc>
+        <wariant_stan_magazynowy>20</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1091-9</wariant_id>
+        <wariant_sku>SP-1091-9</wariant_sku>
+        <wariant_ean>5901205018218</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[9]]></wariant_wartosc>
+        <wariant_stan_magazynowy>9</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1091-10</wariant_id>
+        <wariant_sku>SP-1091-10</wariant_sku>
+        <wariant_ean>5901205018225</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[10]]></wariant_wartosc>
+        <wariant_stan_magazynowy>12</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1091-11</wariant_id>
+        <wariant_sku>SP-1091-11</wariant_sku>
+        <wariant_ean>5901205018232</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[11]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>41</stan_magazynowy>
+    <cena_zewnetrzna>34.90</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>25.13</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1092</id>
+    <sku>SP-1092</sku>
+    <kzs>5909903400922</kzs>
+    <ean>5901203400923</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Rękawice antyprzecięciowe poziom C CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Rękawice z włóknem HPPE, odporność na przecięcie poziom C.</p>]]></dlugi_opis>
+    <kategoria>Ochrona rąk/Rękawice antyprzecięciowe</kategoria>
+    <waga>0.09</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1092-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1092-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1092-8</wariant_id>
+        <wariant_sku>SP-1092-8</wariant_sku>
+        <wariant_ean>5901205018409</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[8]]></wariant_wartosc>
+        <wariant_stan_magazynowy>16</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1092-9</wariant_id>
+        <wariant_sku>SP-1092-9</wariant_sku>
+        <wariant_ean>5901205018416</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[9]]></wariant_wartosc>
+        <wariant_stan_magazynowy>13</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1092-10</wariant_id>
+        <wariant_sku>SP-1092-10</wariant_sku>
+        <wariant_ean>5901205018423</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[10]]></wariant_wartosc>
+        <wariant_stan_magazynowy>5</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1092-11</wariant_id>
+        <wariant_sku>SP-1092-11</wariant_sku>
+        <wariant_ean>5901205018430</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[11]]></wariant_wartosc>
+        <wariant_stan_magazynowy>17</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>51</stan_magazynowy>
+    <cena_zewnetrzna>39.09</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>28.14</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1093</id>
+    <sku>SP-1093</sku>
+    <kzs>5909903400939</kzs>
+    <ean>5901203400930</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Rękawice antyprzecięciowe poziom C PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Rękawice z włóknem HPPE, odporność na przecięcie poziom C.</p>]]></dlugi_opis>
+    <kategoria>Ochrona rąk/Rękawice antyprzecięciowe</kategoria>
+    <waga>0.09</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1093-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1093-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1093-8</wariant_id>
+        <wariant_sku>SP-1093-8</wariant_sku>
+        <wariant_ean>5901205018607</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[8]]></wariant_wartosc>
+        <wariant_stan_magazynowy>0</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1093-9</wariant_id>
+        <wariant_sku>SP-1093-9</wariant_sku>
+        <wariant_ean>5901205018614</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[9]]></wariant_wartosc>
+        <wariant_stan_magazynowy>10</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1093-10</wariant_id>
+        <wariant_sku>SP-1093-10</wariant_sku>
+        <wariant_ean>5901205018621</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[10]]></wariant_wartosc>
+        <wariant_stan_magazynowy>13</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1093-11</wariant_id>
+        <wariant_sku>SP-1093-11</wariant_sku>
+        <wariant_ean>5901205018638</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[11]]></wariant_wartosc>
+        <wariant_stan_magazynowy>22</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>45</stan_magazynowy>
+    <cena_zewnetrzna>43.28</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>31.16</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1094</id>
+    <sku>SP-1094</sku>
+    <kzs>5909903400946</kzs>
+    <ean>5901203400947</ean>
+    <producent><![CDATA[Portwest]]></producent>
+    <nazwa><![CDATA[Rękawice antyprzecięciowe poziom C ECO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Rękawice z włóknem HPPE, odporność na przecięcie poziom C.</p>]]></dlugi_opis>
+    <kategoria>Ochrona rąk/Rękawice antyprzecięciowe</kategoria>
+    <waga>0.09</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1094-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1094-2/900/900]]></zdjecie>
+    </zdjecia>
+    <warianty>
+      <wariant>
+        <wariant_id>SP-1094-8</wariant_id>
+        <wariant_sku>SP-1094-8</wariant_sku>
+        <wariant_ean>5901205018805</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[8]]></wariant_wartosc>
+        <wariant_stan_magazynowy>7</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1094-9</wariant_id>
+        <wariant_sku>SP-1094-9</wariant_sku>
+        <wariant_ean>5901205018812</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[9]]></wariant_wartosc>
+        <wariant_stan_magazynowy>8</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1094-10</wariant_id>
+        <wariant_sku>SP-1094-10</wariant_sku>
+        <wariant_ean>5901205018829</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[10]]></wariant_wartosc>
+        <wariant_stan_magazynowy>24</wariant_stan_magazynowy>
+      </wariant>
+      <wariant>
+        <wariant_id>SP-1094-11</wariant_id>
+        <wariant_sku>SP-1094-11</wariant_sku>
+        <wariant_ean>5901205018836</wariant_ean>
+        <wariant_nazwa><![CDATA[Suurus]]></wariant_nazwa>
+        <wariant_wartosc><![CDATA[11]]></wariant_wartosc>
+        <wariant_stan_magazynowy>18</wariant_stan_magazynowy>
+      </wariant>
+    </warianty>
+    <stan_magazynowy>57</stan_magazynowy>
+    <cena_zewnetrzna>47.46</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>34.17</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1101</id>
+    <sku>SP-1101</sku>
+    <kzs>5909903401011</kzs>
+    <ean>5901203401012</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Hełm ochronny budowlany z regulacją]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Hełm z tworzywa ABS, regulacja pokrętłem, EN 397.</p>]]></dlugi_opis>
+    <kategoria>Ochrona głowy/Hełmy ochronne</kategoria>
+    <waga>0.40</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1101-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1101-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>34</stan_magazynowy>
+    <cena_zewnetrzna>59.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>42.48</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1102</id>
+    <sku>SP-1102</sku>
+    <kzs>5909903401028</kzs>
+    <ean>5901203401029</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Hełm ochronny budowlany z regulacją CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Hełm z tworzywa ABS, regulacja pokrętłem, EN 397.</p>]]></dlugi_opis>
+    <kategoria>Ochrona głowy/Hełmy ochronne</kategoria>
+    <waga>0.40</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1102-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1102-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>17</stan_magazynowy>
+    <cena_zewnetrzna>66.08</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>47.58</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1111</id>
+    <sku>SP-1111</sku>
+    <kzs>5909903401110</kzs>
+    <ean>5901203401111</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Okulary ochronne bezbarwne z powłoką anti-fog]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Okulary z poliwęglanu, powłoka anti-fog i anti-scratch.</p>]]></dlugi_opis>
+    <kategoria>Ochrona głowy/Okulary ochronne</kategoria>
+    <waga>0.06</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1111-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1111-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>32</stan_magazynowy>
+    <cena_zewnetrzna>22.90</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>16.49</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1112</id>
+    <sku>SP-1112</sku>
+    <kzs>5909903401127</kzs>
+    <ean>5901203401128</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Okulary ochronne bezbarwne z powłoką anti-fog CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Okulary z poliwęglanu, powłoka anti-fog i anti-scratch.</p>]]></dlugi_opis>
+    <kategoria>Ochrona głowy/Okulary ochronne</kategoria>
+    <waga>0.06</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1112-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1112-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>23</stan_magazynowy>
+    <cena_zewnetrzna>25.65</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>18.47</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1113</id>
+    <sku>SP-1113</sku>
+    <kzs>5909903401134</kzs>
+    <ean>5901203401135</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Okulary ochronne bezbarwne z powłoką anti-fog PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Okulary z poliwęglanu, powłoka anti-fog i anti-scratch.</p>]]></dlugi_opis>
+    <kategoria>Ochrona głowy/Okulary ochronne</kategoria>
+    <waga>0.06</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1113-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1113-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>35</stan_magazynowy>
+    <cena_zewnetrzna>28.40</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>20.45</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1121</id>
+    <sku>SP-1121</sku>
+    <kzs>5909903401219</kzs>
+    <ean>5901203401210</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Ochronniki słuchu nauszne SNR 30 dB]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Nauszniki przeciwhałasowe, tłumienie SNR 30 dB, EN 352-1.</p>]]></dlugi_opis>
+    <kategoria>Ochrona głowy/Ochronniki słuchu</kategoria>
+    <waga>0.25</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1121-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1121-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>16</stan_magazynowy>
+    <cena_zewnetrzna>49.90</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>35.93</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1122</id>
+    <sku>SP-1122</sku>
+    <kzs>5909903401226</kzs>
+    <ean>5901203401227</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Ochronniki słuchu nauszne SNR 30 dB CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Nauszniki przeciwhałasowe, tłumienie SNR 30 dB, EN 352-1.</p>]]></dlugi_opis>
+    <kategoria>Ochrona głowy/Ochronniki słuchu</kategoria>
+    <waga>0.25</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1122-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1122-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>36</stan_magazynowy>
+    <cena_zewnetrzna>55.89</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>40.24</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1123</id>
+    <sku>SP-1123</sku>
+    <kzs>5909903401233</kzs>
+    <ean>5901203401234</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Ochronniki słuchu nauszne SNR 30 dB PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Nauszniki przeciwhałasowe, tłumienie SNR 30 dB, EN 352-1.</p>]]></dlugi_opis>
+    <kategoria>Ochrona głowy/Ochronniki słuchu</kategoria>
+    <waga>0.25</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1123-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1123-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>20</stan_magazynowy>
+    <cena_zewnetrzna>61.88</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>44.55</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1131</id>
+    <sku>SP-1131</sku>
+    <kzs>5909903401318</kzs>
+    <ean>5901203401319</ean>
+    <producent><![CDATA[Yato]]></producent>
+    <nazwa><![CDATA[Zestaw kluczy płasko-oczkowych 12 szt. 8-22 mm]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Zestaw kluczy ze stali chromowo-wanadowej, satynowe wykończenie, etui.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Klucze</kategoria>
+    <waga>1.80</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1131-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1131-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>14</stan_magazynowy>
+    <cena_zewnetrzna>149.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>107.28</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1132</id>
+    <sku>SP-1132</sku>
+    <kzs>5909903401325</kzs>
+    <ean>5901203401326</ean>
+    <producent><![CDATA[Yato]]></producent>
+    <nazwa><![CDATA[Zestaw kluczy płasko-oczkowych 12 szt. 8-22 mm CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Zestaw kluczy ze stali chromowo-wanadowej, satynowe wykończenie, etui.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Klucze</kategoria>
+    <waga>1.80</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1132-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1132-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>57</stan_magazynowy>
+    <cena_zewnetrzna>166.88</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>120.15</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1133</id>
+    <sku>SP-1133</sku>
+    <kzs>5909903401332</kzs>
+    <ean>5901203401333</ean>
+    <producent><![CDATA[Yato]]></producent>
+    <nazwa><![CDATA[Zestaw kluczy płasko-oczkowych 12 szt. 8-22 mm PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Zestaw kluczy ze stali chromowo-wanadowej, satynowe wykończenie, etui.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Klucze</kategoria>
+    <waga>1.80</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1133-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1133-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>46</stan_magazynowy>
+    <cena_zewnetrzna>184.76</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>133.03</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1141</id>
+    <sku>SP-1141</sku>
+    <kzs>5909903401417</kzs>
+    <ean>5901203401418</ean>
+    <producent><![CDATA[Bahco]]></producent>
+    <nazwa><![CDATA[Młotek ślusarski 500 g rączka z włókna szklanego]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Młotek z kutej stali, antypoślizgowa rękojeść.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Młotki</kategoria>
+    <waga>0.70</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1141-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1141-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>15</stan_magazynowy>
+    <cena_zewnetrzna>79.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>56.88</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1142</id>
+    <sku>SP-1142</sku>
+    <kzs>5909903401424</kzs>
+    <ean>5901203401425</ean>
+    <producent><![CDATA[Bahco]]></producent>
+    <nazwa><![CDATA[Młotek ślusarski 500 g rączka z włókna szklanego CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Młotek z kutej stali, antypoślizgowa rękojeść.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Młotki</kategoria>
+    <waga>0.70</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1142-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1142-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>17</stan_magazynowy>
+    <cena_zewnetrzna>88.48</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>63.71</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1151</id>
+    <sku>SP-1151</sku>
+    <kzs>5909903401516</kzs>
+    <ean>5901203401517</ean>
+    <producent><![CDATA[Yato]]></producent>
+    <nazwa><![CDATA[Zestaw wkrętaków precyzyjnych 6 szt.]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Wkrętaki precyzyjne z obrotową końcówką, stal S2.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Wkrętaki</kategoria>
+    <waga>0.30</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1151-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1151-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>28</stan_magazynowy>
+    <cena_zewnetrzna>45.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>32.40</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1152</id>
+    <sku>SP-1152</sku>
+    <kzs>5909903401523</kzs>
+    <ean>5901203401524</ean>
+    <producent><![CDATA[Yato]]></producent>
+    <nazwa><![CDATA[Zestaw wkrętaków precyzyjnych 6 szt. CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Wkrętaki precyzyjne z obrotową końcówką, stal S2.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Wkrętaki</kategoria>
+    <waga>0.30</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1152-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1152-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>18</stan_magazynowy>
+    <cena_zewnetrzna>50.40</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>36.29</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1161</id>
+    <sku>SP-1161</sku>
+    <kzs>5909903401615</kzs>
+    <ean>5901203401616</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Miara zwijana 5 m z magnesem]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Miara z blokadą taśmy, magnetyczny zaczep, obudowa gumowana.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Miary i poziomice</kategoria>
+    <waga>0.28</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1161-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1161-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>37</stan_magazynowy>
+    <cena_zewnetrzna>29.90</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>21.53</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1162</id>
+    <sku>SP-1162</sku>
+    <kzs>5909903401622</kzs>
+    <ean>5901203401623</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Miara zwijana 5 m z magnesem CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Miara z blokadą taśmy, magnetyczny zaczep, obudowa gumowana.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Miary i poziomice</kategoria>
+    <waga>0.28</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1162-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1162-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>52</stan_magazynowy>
+    <cena_zewnetrzna>33.49</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>24.11</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1163</id>
+    <sku>SP-1163</sku>
+    <kzs>5909903401639</kzs>
+    <ean>5901203401630</ean>
+    <producent><![CDATA[Stalco]]></producent>
+    <nazwa><![CDATA[Miara zwijana 5 m z magnesem PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Miara z blokadą taśmy, magnetyczny zaczep, obudowa gumowana.</p>]]></dlugi_opis>
+    <kategoria>Narzędzia ręczne/Miary i poziomice</kategoria>
+    <waga>0.28</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1163-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1163-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>24</stan_magazynowy>
+    <cena_zewnetrzna>37.08</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>26.70</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1171</id>
+    <sku>SP-1171</sku>
+    <kzs>5909903401714</kzs>
+    <ean>5901203401715</ean>
+    <producent><![CDATA[Neo Tools]]></producent>
+    <nazwa><![CDATA[Wiertarko-wkrętarka akumulatorowa 18V 2x2.0Ah]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Wiertarko-wkrętarka 18V, moment 45 Nm, dwie baterie, walizka.</p>]]></dlugi_opis>
+    <kategoria>Elektronarzędzia/Wiertarki</kategoria>
+    <waga>2.40</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1171-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1171-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>21</stan_magazynowy>
+    <cena_zewnetrzna>449.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>323.28</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1172</id>
+    <sku>SP-1172</sku>
+    <kzs>5909903401721</kzs>
+    <ean>5901203401722</ean>
+    <producent><![CDATA[Neo Tools]]></producent>
+    <nazwa><![CDATA[Wiertarko-wkrętarka akumulatorowa 18V 2x2.0Ah CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Wiertarko-wkrętarka 18V, moment 45 Nm, dwie baterie, walizka.</p>]]></dlugi_opis>
+    <kategoria>Elektronarzędzia/Wiertarki</kategoria>
+    <waga>2.40</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1172-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1172-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>17</stan_magazynowy>
+    <cena_zewnetrzna>502.88</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>362.07</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1173</id>
+    <sku>SP-1173</sku>
+    <kzs>5909903401738</kzs>
+    <ean>5901203401739</ean>
+    <producent><![CDATA[Neo Tools]]></producent>
+    <nazwa><![CDATA[Wiertarko-wkrętarka akumulatorowa 18V 2x2.0Ah PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Wiertarko-wkrętarka 18V, moment 45 Nm, dwie baterie, walizka.</p>]]></dlugi_opis>
+    <kategoria>Elektronarzędzia/Wiertarki</kategoria>
+    <waga>2.40</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1173-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1173-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>47</stan_magazynowy>
+    <cena_zewnetrzna>556.76</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>400.87</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1181</id>
+    <sku>SP-1181</sku>
+    <kzs>5909903401813</kzs>
+    <ean>5901203401814</ean>
+    <producent><![CDATA[Neo Tools]]></producent>
+    <nazwa><![CDATA[Szlifierka kątowa 125 mm 900 W]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Szlifierka kątowa 900 W, blokada wrzeciona, osłona tarczy.</p>]]></dlugi_opis>
+    <kategoria>Elektronarzędzia/Szlifierki</kategoria>
+    <waga>2.10</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1181-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1181-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>3</stan_magazynowy>
+    <cena_zewnetrzna>269.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>193.68</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1182</id>
+    <sku>SP-1182</sku>
+    <kzs>5909903401820</kzs>
+    <ean>5901203401821</ean>
+    <producent><![CDATA[Neo Tools]]></producent>
+    <nazwa><![CDATA[Szlifierka kątowa 125 mm 900 W CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Szlifierka kątowa 900 W, blokada wrzeciona, osłona tarczy.</p>]]></dlugi_opis>
+    <kategoria>Elektronarzędzia/Szlifierki</kategoria>
+    <waga>2.10</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1182-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1182-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>2</stan_magazynowy>
+    <cena_zewnetrzna>301.28</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>216.92</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1183</id>
+    <sku>SP-1183</sku>
+    <kzs>5909903401837</kzs>
+    <ean>5901203401838</ean>
+    <producent><![CDATA[Neo Tools]]></producent>
+    <nazwa><![CDATA[Szlifierka kątowa 125 mm 900 W PRO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Szlifierka kątowa 900 W, blokada wrzeciona, osłona tarczy.</p>]]></dlugi_opis>
+    <kategoria>Elektronarzędzia/Szlifierki</kategoria>
+    <waga>2.10</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1183-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1183-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>39</stan_magazynowy>
+    <cena_zewnetrzna>333.56</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>240.16</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1184</id>
+    <sku>SP-1184</sku>
+    <kzs>5909903401844</kzs>
+    <ean>5901203401845</ean>
+    <producent><![CDATA[Neo Tools]]></producent>
+    <nazwa><![CDATA[Szlifierka kątowa 125 mm 900 W ECO]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Szlifierka kątowa 900 W, blokada wrzeciona, osłona tarczy.</p>]]></dlugi_opis>
+    <kategoria>Elektronarzędzia/Szlifierki</kategoria>
+    <waga>2.10</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1184-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1184-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>17</stan_magazynowy>
+    <cena_zewnetrzna>365.84</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>263.40</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1191</id>
+    <sku>SP-1191</sku>
+    <kzs>5909903401912</kzs>
+    <ean>5901203401913</ean>
+    <producent><![CDATA[Yato]]></producent>
+    <nazwa><![CDATA[Tarcze do cięcia metalu 125 mm 10 szt.]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Tarcze tnące do metalu, grubość 1.0 mm, opakowanie 10 szt.</p>]]></dlugi_opis>
+    <kategoria>Elektronarzędzia/Akcesoria</kategoria>
+    <waga>0.50</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1191-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1191-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>56</stan_magazynowy>
+    <cena_zewnetrzna>39.00</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>28.08</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+  <produkt>
+    <id>SP-1192</id>
+    <sku>SP-1192</sku>
+    <kzs>5909903401929</kzs>
+    <ean>5901203401920</ean>
+    <producent><![CDATA[Yato]]></producent>
+    <nazwa><![CDATA[Tarcze do cięcia metalu 125 mm 10 szt. CLASSIC]]></nazwa>
+    <dlugi_opis><![CDATA[<p>Tarcze tnące do metalu, grubość 1.0 mm, opakowanie 10 szt.</p>]]></dlugi_opis>
+    <kategoria>Elektronarzędzia/Akcesoria</kategoria>
+    <waga>0.50</waga>
+    <zdjecia>
+      <zdjecie pozycja="1"><![CDATA[https://picsum.photos/seed/SP-1192-1/900/900]]></zdjecie>
+      <zdjecie pozycja="2"><![CDATA[https://picsum.photos/seed/SP-1192-2/900/900]]></zdjecie>
+    </zdjecia>
+    <stan_magazynowy>32</stan_magazynowy>
+    <cena_zewnetrzna>43.68</cena_zewnetrzna>
+    <cena_zewnetrzna_hurt>31.45</cena_zewnetrzna_hurt>
+    <vat>0.23</vat>
+  </produkt>
+</produkty>

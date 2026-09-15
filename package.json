@@ -1,0 +1,40 @@
+{
+  "name": "spetspood",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "impordi": "tsx scripts/impordi.ts",
+    "genereeri-naidis": "tsx scripts/genereeri-naidis.ts",
+    "seemne": "npm run genereeri-naidis && npm run impordi -- --fail data/naidis-heavy.xml",
+    "test": "tsx --conditions=react-server --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "fast-xml-parser": "^5.11.1",
+    "next": "16.3.5",
+    "nodemailer": "^10.0.10",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "playwright": "^1.63.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.13",
+    "typescript": "^5"
+  }
+}

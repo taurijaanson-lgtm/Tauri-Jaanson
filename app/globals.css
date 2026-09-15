@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/*
+ * Poe värvipalett: sügav navi (usaldusväärsus, tööstus) + turvakollane aktsent.
+ * Hoiame palett-tokenid ühes kohas, et kujundust oleks lihtne muuta.
+ */
+@theme {
+  --color-navi-50: #f2f5fb;
+  --color-navi-100: #e2e9f5;
+  --color-navi-200: #c6d3e9;
+  --color-navi-600: #274a83;
+  --color-navi-700: #1c3765;
+  --color-navi-800: #14284b;
+  --color-navi-900: #0d1b33;
+
+  --color-kollane-300: #ffd66b;
+  --color-kollane-400: #f7c948;
+  --color-kollane-500: #f5b301;
+  --color-kollane-600: #d99a00;
+
+  --color-hall-50: #f7f8fa;
+  --color-hall-100: #eef0f4;
+  --color-hall-200: #dfe3ea;
+  --color-hall-400: #9aa3b2;
+  --color-hall-600: #5b6577;
+  --color-hall-800: #2b3444;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-hall-50);
+  color: var(--color-hall-800);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tarnija kirjeldused tulevad HTML-ina; anname neile loetava vormistuse. */
+.kirjeldus p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+.kirjeldus ul,
+.kirjeldus ol {
+  margin: 0.75rem 0 0.75rem 1.25rem;
+  list-style: disc;
+  line-height: 1.7;
+}
+.kirjeldus ol {
+  list-style: decimal;
+}
+.kirjeldus strong {
+  font-weight: 600;
+}
+.kirjeldus table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+}
+.kirjeldus td,
+.kirjeldus th {
+  border: 1px solid var(--color-hall-200);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+/* Klaviatuuriga liikujale selge fookusraam. */
+:focus-visible {
+  outline: 2px solid var(--color-navi-600);
+  outline-offset: 2px;
+}
