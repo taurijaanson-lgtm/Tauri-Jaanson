@@ -32,6 +32,38 @@ const SP100_EXTRA = [
   'UNP', 'UPS', 'USB', 'WFC', 'XOM',
 ];
 
+/**
+ * Fuel and energy: the futures that set pump and burner prices, the ETFs that
+ * track them, and the refiners and producers whose shares move with them.
+ * Futures carry Yahoo's `=F` suffix — other data sources spell them their own
+ * way, so this list travels with the yahoo provider.
+ */
+const FUEL_FUTURES = [
+  'CL=F',  // WTI crude
+  'BZ=F',  // Brent crude
+  'RB=F',  // RBOB gasoline
+  'HO=F',  // Heating oil / diesel
+  'NG=F',  // Natural gas
+];
+
+const FUEL_FUNDS = [
+  'USO',   // WTI crude
+  'BNO',   // Brent crude
+  'UGA',   // Gasoline
+  'UNG',   // Natural gas
+  'XLE',   // Energy sector
+  'XOP',   // Oil & gas exploration
+  'OIH',   // Oilfield services
+  'VDE',   // Energy
+  'CRAK',  // Refiners
+];
+
+const FUEL_EQUITIES = [
+  'XOM', 'CVX', 'COP', 'OXY', 'EOG', 'PXD', 'DVN', 'FANG', 'HES', 'APA',
+  'MPC', 'VLO', 'PSX', 'DINO', 'PBF', 'DK', 'CVI',
+  'SLB', 'HAL', 'BKR', 'WMB', 'KMI', 'OKE', 'LNG', 'TRGP',
+];
+
 function unique(symbols: string[]): string[] {
   return [...new Set(symbols.map((symbol) => symbol.trim().toUpperCase()).filter(Boolean))].sort();
 }
@@ -40,6 +72,10 @@ export const UNIVERSES: Record<string, string[]> = {
   dow30: unique(DOW30),
   nasdaq100: unique([...NASDAQ100_EXTRA, 'AAPL', 'AMZN', 'AMGN', 'CSCO', 'HON', 'MSFT', 'NVDA']),
   sp100: unique([...DOW30, ...SP100_EXTRA, 'AAPL', 'META', 'GOOGL', 'NFLX', 'TSLA', 'AVGO', 'QCOM', 'ORCL', 'TXN', 'INTC', 'ADBE', 'PEP', 'COST']),
+  /** Futures, funds and equities that track fuel prices. */
+  fuel: unique([...FUEL_FUTURES, ...FUEL_FUNDS, ...FUEL_EQUITIES]),
+  /** Just the contracts that set fuel prices, without the equities around them. */
+  'fuel-futures': unique([...FUEL_FUTURES, ...FUEL_FUNDS]),
   /** A small, fast list for trying things out. */
   demo: unique(['AAPL', 'MSFT', 'NVDA', 'AMZN', 'META', 'GOOGL', 'TSLA', 'AMD', 'NFLX', 'JPM', 'XOM', 'WMT']),
 };

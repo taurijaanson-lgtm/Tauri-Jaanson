@@ -24,6 +24,23 @@ describe('resolveUniverse', () => {
     }
   });
 
+  it('covers fuel prices with futures, funds and equities', async () => {
+    const fuel = await resolveUniverse('fuel');
+    expect(fuel).toContain('CL=F');
+    expect(fuel).toContain('RB=F');
+    expect(fuel).toContain('XLE');
+    expect(fuel).toContain('VLO');
+  });
+
+  it('keeps fuel-futures a subset of fuel', async () => {
+    const fuel = new Set(await resolveUniverse('fuel'));
+    const futures = await resolveUniverse('fuel-futures');
+    expect(futures.length).toBeGreaterThan(0);
+    for (const symbol of futures) expect(fuel.has(symbol)).toBe(true);
+    // The futures list leaves out the producers and refiners.
+    expect(futures).not.toContain('XOM');
+  });
+
   it('accepts an inline comma-separated list', async () => {
     expect(await resolveUniverse('msft, aapl,nvda')).toEqual(['AAPL', 'MSFT', 'NVDA']);
   });

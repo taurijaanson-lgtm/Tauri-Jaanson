@@ -79,9 +79,26 @@ npm run scan -- [options]
     --list                       List strategies and universes, then exit
 ```
 
-Built-in universes: `dow30`, `nasdaq100`, `sp100`, `demo`. These are static
-snapshots of index membership, not a live index feed — pass your own file
-(one symbol per line, `#` comments allowed) when membership matters.
+Built-in universes: `dow30`, `nasdaq100`, `sp100`, `fuel`, `fuel-futures`,
+`demo`. The index lists are static snapshots of membership, not a live index
+feed — pass your own file (one symbol per line, `#` comments allowed) when
+membership matters.
+
+### Fuel prices
+
+`fuel` covers what moves at the pump and the burner tip: the futures that set
+the price (WTI and Brent crude, RBOB gasoline, heating oil, natural gas), the
+ETFs that track them, and the producers, refiners and services firms whose
+shares follow. `fuel-futures` is the contracts and funds alone, without the
+equities.
+
+```bash
+npm run scan -- --universe fuel --strategy all --verbose
+npm run scan -- --universe fuel-futures --strategy momentum,volatility
+```
+
+Futures use Yahoo's `=F` suffix (`CL=F`, `RB=F`), so those symbols are specific
+to the `yahoo` provider — another data source will spell them its own way.
 
 Results go to stdout and progress to stderr, so redirection stays clean:
 
