@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" role="img" aria-label="Jaanson Advisory">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2440"/>
+      <stop offset="1" stop-color="#0f7a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#lg)"/>
+  <path d="M16 44V32l8 6 9-12 7 5 8-13" fill="none" stroke="#7fd6b4" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="48" cy="18" r="4" fill="#ffffff"/>
+  <text x="80" y="30" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="600" fill="#0a1a2f">Jaanson Advisory</text>
+  <text x="80" y="48" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2.4" fill="#64748b">PLANS · MODELS · FUNDING</text>
+</svg>
