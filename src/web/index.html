@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trade Scanner</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f6f7f9;
+        --panel: #ffffff;
+        --border: #d8dce3;
+        --text: #16191d;
+        --muted: #616b78;
+        --accent: #2f6df6;
+        --long: #0f7a4d;
+        --short: #b02a2a;
+        --row-hover: #eef2fb;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #14161a;
+          --panel: #1c1f25;
+          --border: #2e333c;
+          --text: #e8eaed;
+          --muted: #9aa4b2;
+          --accent: #6f9bff;
+          --long: #4ade80;
+          --short: #f87171;
+          --row-hover: #232831;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 24px 16px 48px;
+        background: var(--bg);
+        color: var(--text);
+        font: 14px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      main { max-width: 1180px; margin: 0 auto; }
+      h1 { font-size: 20px; margin: 0 0 4px; }
+      .sub { color: var(--muted); margin: 0 0 20px; }
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+      label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+      select, input {
+        background: var(--bg);
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 7px 8px;
+        font: inherit;
+        min-width: 120px;
+      }
+      button {
+        background: var(--accent);
+        color: #fff;
+        border: 0;
+        border-radius: 6px;
+        padding: 9px 18px;
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      button:disabled { opacity: 0.6; cursor: progress; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { text-align: right; padding: 8px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+      th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+      th { font-size: 12px; color: var(--muted); font-weight: 600; cursor: pointer; user-select: none; }
+      tbody tr.hit { cursor: pointer; }
+      tbody tr.hit:hover { background: var(--row-hover); }
+      .sym { font-weight: 700; }
+      .long { color: var(--long); }
+      .short { color: var(--short); }
+      .score-cell { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
+      .bar { width: 52px; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
+      .bar > span { display: block; height: 100%; background: var(--accent); }
+      .detail td { text-align: left; color: var(--muted); white-space: normal; padding-top: 0; }
+      .detail ul { margin: 4px 0 0; padding-left: 18px; }
+      .detail li.miss { opacity: 0.65; }
+      .status { color: var(--muted); }
+      .error { color: var(--short); }
+      .note { color: var(--muted); font-size: 12px; margin-top: 12px; }
+      .wrap { overflow-x: auto; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Trade Scanner</h1>
+      <p class="sub">Technical setups across a universe of symbols, ranked by score.</p>
+
+      <section class="panel">
+        <div class="controls">
+          <label>Universe<select id="universe"></select></label>
+          <label>Strategy<select id="strategy"></select></label>
+          <label>Data<select id="provider"></select></label>
+          <label>Min score<input id="minScore" type="number" min="0" max="100" step="5" value="0" /></label>
+          <label>Limit<input id="limit" type="number" min="1" step="10" value="50" /></label>
+          <button id="run" type="button">Scan</button>
+          <span id="status" class="status"></span>
+        </div>
+      </section>
+
+      <section class="panel wrap">
+        <table>
+          <thead>
+            <tr>
+              <th data-sort="symbol">Symbol</th>
+              <th data-sort="strategy">Strategy</th>
+              <th data-sort="score">Score</th>
+              <th data-sort="close">Close</th>
+              <th data-sort="changePct">Chg %</th>
+              <th data-sort="relativeVolume">RVol</th>
+              <th data-sort="rsi14">RSI</th>
+              <th data-sort="atrPct">ATR %</th>
+              <th data-sort="pctFrom52wHigh">&lt; 52w high</th>
+            </tr>
+          </thead>
+          <tbody id="rows">
+            <tr><td colspan="9" class="status">Choose a universe and press Scan.</td></tr>
+          </tbody>
+        </table>
+        <p class="note">
+          Click a row to see why it matched. Scores are comparable within a strategy.
+          This is a screening tool, not trading advice.
+        </p>
+      </section>
+    </main>
+
+    <script type="module">
+      const $ = (id) => document.getElementById(id);
+      const rows = $('rows');
+      const status = $('status');
+      let hits = [];
+      let sortKey = 'score';
+      let sortAsc = false;
+
+      const fmt = (value, digits = 2) =>
+        value === null || value === undefined || Number.isNaN(value) ? '–' : Number(value).toFixed(digits);
+
+      function option(value, label) {
+        const element = document.createElement('option');
+        element.value = value;
+        element.textContent = label ?? value;
+        return element;
+      }
+
+      async function loadMeta() {
+        const meta = await (await fetch('/api/meta')).json();
+        for (const name of meta.universes) $('universe').append(option(name));
+        for (const group of meta.groups) $('strategy').append(option(group, `${group} (group)`));
+        for (const strategy of meta.strategies) {
+          $('strategy').append(option(strategy.name, `${strategy.name} — ${strategy.direction}`));
+        }
+        for (const provider of meta.providers) $('provider').append(option(provider));
+        $('universe').value = meta.universes.includes('demo') ? 'demo' : meta.universes[0];
+      }
+
+      // Sorts by the requested key, pulling indicator columns out of the snapshot.
+      function valueOf(hit, key) {
+        if (key in hit) return hit[key];
+        return hit.snapshot?.[key] ?? null;
+      }
+
+      function render() {
+        if (hits.length === 0) {
+          rows.innerHTML = '<tr><td colspan="9" class="status">No setups matched.</td></tr>';
+          return;
+        }
+        const sorted = [...hits].sort((a, b) => {
+          const left = valueOf(a, sortKey);
+          const right = valueOf(b, sortKey);
+          if (typeof left === 'string' || typeof right === 'string') {
+            return sortAsc
+              ? String(left).localeCompare(String(right))
+              : String(right).localeCompare(String(left));
+          }
+          const l = left ?? -Infinity;
+          const r = right ?? -Infinity;
+          return sortAsc ? l - r : r - l;
+        });
+
+        rows.replaceChildren();
+        for (const hit of sorted) {
+          const row = document.createElement('tr');
+          row.className = 'hit';
+          const snap = hit.snapshot;
+          row.innerHTML = `
+            <td class="sym">${hit.symbol}</td>
+            <td><span class="${hit.direction}">${hit.strategy}</span></td>
+            <td><div class="score-cell"><span class="bar"><span style="width:${Math.max(0, Math.min(100, hit.score))}%"></span></span>${fmt(hit.score, 1)}</div></td>
+            <td>${fmt(hit.close)}</td>
+            <td class="${(snap.changePct ?? 0) >= 0 ? 'long' : 'short'}">${fmt(snap.changePct, 1)}</td>
+            <td>${fmt(snap.relativeVolume, 1)}</td>
+            <td>${fmt(snap.rsi14, 0)}</td>
+            <td>${fmt(snap.atrPct, 1)}</td>
+            <td>${fmt(snap.pctFrom52wHigh, 1)}</td>`;
+
+          const detail = document.createElement('tr');
+          detail.className = 'detail';
+          detail.hidden = true;
+          const cell = document.createElement('td');
+          cell.colSpan = 9;
+          const list = document.createElement('ul');
+          for (const rule of hit.rules) {
+            const item = document.createElement('li');
+            if (!rule.passed) item.className = 'miss';
+            item.textContent = `${rule.passed ? '✓' : '✗'} ${rule.name}: ${rule.detail}`;
+            list.append(item);
+          }
+          cell.append(list);
+          detail.append(cell);
+          row.addEventListener('click', () => {
+            detail.hidden = !detail.hidden;
+          });
+          rows.append(row, detail);
+        }
+      }
+
+      async function runScan() {
+        const button = $('run');
+        button.disabled = true;
+        status.className = 'status';
+        status.textContent = 'Scanning…';
+        const params = new URLSearchParams({
+          universe: $('universe').value,
+          strategy: $('strategy').value,
+          provider: $('provider').value,
+          minScore: $('minScore').value,
+          limit: $('limit').value,
+        });
+        try {
+          const response = await fetch(`/api/scan?${params}`);
+          const result = await response.json();
+          if (!response.ok) throw new Error(result.error ?? `HTTP ${response.status}`);
+          hits = result.hits;
+          render();
+          const failed = result.errors.length ? `, ${result.errors.length} error(s)` : '';
+          status.textContent = `${result.hits.length} setup(s) from ${result.scanned} symbol(s)${failed}`;
+        } catch (error) {
+          status.className = 'error';
+          status.textContent = error.message;
+        } finally {
+          button.disabled = false;
+        }
+      }
+
+      for (const header of document.querySelectorAll('th[data-sort]')) {
+        header.addEventListener('click', () => {
+          const key = header.dataset.sort;
+          sortAsc = key === sortKey ? !sortAsc : key === 'symbol' || key === 'strategy';
+          sortKey = key;
+          render();
+        });
+      }
+      $('run').addEventListener('click', runScan);
+      loadMeta().catch((error) => {
+        status.className = 'error';
+        status.textContent = `Could not load options: ${error.message}`;
+      });
+    </script>
+  </body>
+</html>

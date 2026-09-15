@@ -1,0 +1,26 @@
+{
+  "name": "trade-scanner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scans a universe of stocks for technical trade setups and ranks them by score.",
+  "type": "module",
+  "bin": {
+    "scan": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "scan": "tsx src/cli.ts",
+    "serve": "tsx src/server.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
