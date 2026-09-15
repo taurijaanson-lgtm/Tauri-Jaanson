@@ -13,7 +13,7 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 <script type="application/ld+json">
 {
@@ -131,7 +131,7 @@
         <p class="plan__desc">For grant applications and investor rounds, where the document is only part of the work and the deadline is fixed.</p>
         <ul class="ticks">
           <li>Everything in Growth</li>
-          <li>Application dossier in the funder's mandatory format</li>
+          <li>Application dossier in the funder’s mandatory format</li>
           <li>Eligibility screening and budget justification</li>
           <li>Investor pitch deck or bank credit pack</li>
           <li>Answers to funder clarification questions</li>
@@ -164,8 +164,8 @@
       <form class="card reveal" aria-labelledby="estimator-heading" onsubmit="return false">
         <h3 id="estimator-heading">Your project</h3>
 
-        <fieldset style="border:0;padding:0;margin:16px 0 0">
-          <legend class="card__meta" style="padding:0">What do you need?</legend>
+        <fieldset class="fieldset">
+          <legend class="card__meta">What do you need?</legend>
           <div class="ticks" style="margin-top:12px;gap:12px">
             <label class="checkbox"><input type="radio" name="plan-type" value="startup" checked> <span>Business plan for a new company or first loan</span></label>
             <label class="checkbox"><input type="radio" name="plan-type" value="growth"> <span>Expansion plan for an operating company</span></label>
@@ -174,8 +174,8 @@
           </div>
         </fieldset>
 
-        <fieldset style="border:0;padding:0;margin:24px 0 0">
-          <legend class="card__meta" style="padding:0">Add-ons</legend>
+        <fieldset class="fieldset">
+          <legend class="card__meta">Add-ons</legend>
           <div class="ticks" style="margin-top:12px;gap:12px">
             <label class="checkbox"><input type="checkbox" name="extra" value="model"> <span>Full 5-year three-statement model</span></label>
             <label class="checkbox"><input type="checkbox" name="extra" value="market"> <span>Market and competitor research</span></label>
@@ -185,13 +185,13 @@
         </fieldset>
       </form>
 
-      <div class="card reveal" style="background:var(--navy-900);border-color:var(--navy-700)">
-        <span class="card__meta" style="color:#8aa0b8">Indicative range</span>
-        <p style="font-family:var(--font-display);font-size:2.2rem;color:#fff;line-height:1.1;margin:12px 0 4px" data-estimate-price aria-live="polite">€1,900 – €2,450</p>
-        <p style="color:#b9c6d6;margin-bottom:20px">Typical delivery: <b style="color:#7fd6b4" data-estimate-weeks>2–3 weeks</b></p>
-        <p style="color:#8aa0b8;font-size:.9rem;border-top:1px solid rgba(255,255,255,.14);padding-top:16px;margin-bottom:20px" data-estimate-summary>Early-stage startup plan</p>
+      <div class="card card--ink estimate reveal">
+        <span class="card__meta">Indicative range</span>
+        <p class="estimate__price" data-estimate-price aria-live="polite">€1,900 – €2,450</p>
+        <p class="estimate__weeks">Typical delivery: <b data-estimate-weeks>2–3 weeks</b></p>
+        <p class="estimate__summary" data-estimate-summary>Early-stage startup plan</p>
         <a class="btn btn--light btn--block" href="contact.html">Get a written quote</a>
-        <p class="small" style="color:#7f93aa;margin:16px 0 0">Indicative only. Fees are fixed in the proposal and do not move afterwards unless the scope changes.</p>
+        <p class="estimate__note">Indicative only. Fees are fixed in the proposal and do not move afterwards unless the scope changes.</p>
       </div>
     </div>
   </div>
@@ -297,7 +297,7 @@
       </details>
       <details>
         <summary>What if the bank rejects it?</summary>
-        <p>We go through the rejection with you at no charge, and if the reason is something within the document's control, we fix it and resubmit within the original fee.</p>
+        <p>We go through the rejection with you at no charge, and if the reason is something within the document’s control, we fix it and resubmit within the original fee.</p>
       </details>
     </div>
   </div>

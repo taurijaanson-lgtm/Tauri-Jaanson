@@ -61,8 +61,22 @@ specifics are placeholders. Replace these:
 5. **Testimonials** (`index.html`) — quoted with anonymised attributions; swap in real
    ones once you have written permission to publish them.
 
-Design tokens (colours, spacing, radii, fonts) live in the `:root` block at the top of
-`assets/css/styles.css`. Changing `--accent` and `--navy-900` there re-skins the whole site.
+## Design system
+
+The visual language is editorial rather than SaaS: a warm paper ground (`--paper`), near-black
+ink, one deep green accent and a brass second colour used only for numerals and small marks.
+
+- **Hairlines, not shadows.** Sections, columns, table rows and list items are separated by
+  1px rules. Elevation is spent on one element per view — the hero tear sheet, the featured
+  price tier.
+- **Type.** Fraunces at weight 400 for display, set large with tight tracking; Inter for text
+  and for the uppercase, wide-tracked micro-labels. All figures are tabular.
+- **Structure.** Stats, process steps, package tiers and case-study results are ruled grids
+  with no gap, so the page reads as a ledger rather than a row of boxes.
+
+Every colour, space, radius and font is a token in the `:root` block at the top of
+`assets/css/styles.css`; changing `--accent`, `--ink` and `--paper` there re-skins the site.
+Text colours are checked against WCAG AA (4.5:1) on each background they appear on.
 
 The header and footer are repeated in each page, so a nav change means editing all seven
 files — `grep -l 'class="nav__list"' *.html` lists them.
@@ -94,6 +108,8 @@ matching service on the form.
 
 - Skip link, visible focus rings, labelled form fields with inline error messages, and
   `aria-current` on the active nav item.
+- Body, muted, label, accent and brass text all meet WCAG AA contrast on the grounds they
+  are used on, light and dark.
 - Every page is fully readable with JavaScript disabled — the scroll animations only
   activate once JS adds a `js` class to `<html>`.
 - `prefers-reduced-motion` disables animation; a print stylesheet strips the chrome.
