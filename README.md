@@ -1,4 +1,4 @@
-# Jaanson Advisory — financial advisory website
+# Triple A Advisory — financial advisory website
 
 A static marketing website for a financial advisory practice that provides **business
 plans, financial models, funding applications and project management**.
@@ -47,10 +47,10 @@ After deploying to a custom domain, update the absolute URLs in `sitemap.xml`,
 The copy is written as a complete, realistic site rather than lorem ipsum, but the
 specifics are placeholders. Replace these:
 
-1. **Contact details** — `hello@jaansonadvisory.com` and `+372 5000 0000` appear in the
+1. **Contact details** — `hello@tripleaadvisory.com` and `+372 5000 0000` appear in the
    footer of every page, on `contact.html`, and in the JSON-LD block in `index.html`.
    ```bash
-   grep -rn "jaansonadvisory.com\|5000 0000" --include="*.html" .
+   grep -rn "tripleaadvisory.com\|5000 0000" --include="*.html" .
    ```
 2. **Track record numbers** — the stats on `index.html` (180+ plans, €74M financed, 81%
    approval rate, 12 years) and the profile figures on `about.html`.
@@ -80,7 +80,7 @@ Forms, or your own handler:
 ```html
 <form class="form" id="enquiry-form" method="post"
       data-endpoint="https://formspree.io/f/your-form-id"
-      data-mailto="hello@jaansonadvisory.com" novalidate>
+      data-mailto="hello@tripleaadvisory.com" novalidate>
 ```
 
 With that attribute present, the form posts in the background and shows a success or error

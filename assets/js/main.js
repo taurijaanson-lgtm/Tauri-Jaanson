@@ -1,4 +1,4 @@
-/* Jaanson Advisory — site behaviour.
+/* Triple A Advisory — site behaviour.
    Everything degrades gracefully: the site is fully readable with JS disabled. */
 (function () {
   'use strict';
@@ -142,7 +142,7 @@
           form.reset();
           setStatus('Thank you — your enquiry is on its way. We reply within one working day.');
         }).catch(function () {
-          setStatus('Sorry, that did not go through. Please email hello@jaansonadvisory.com instead.', true);
+          setStatus('Sorry, that did not go through. Please email hello@tripleaadvisory.com instead.', true);
         }).then(function () {
           if (button) button.disabled = false;
         });
