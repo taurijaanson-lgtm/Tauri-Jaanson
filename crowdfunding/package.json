@@ -1,0 +1,22 @@
+{
+  "name": "crowdfunding-us",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reward- and donation-based crowdfunding platform for the US market.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/main.ts --demo",
+    "start": "tsx src/main.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

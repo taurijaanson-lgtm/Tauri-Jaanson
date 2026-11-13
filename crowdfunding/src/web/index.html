@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backyard — Fund what's next</title>
+<style>
+  :root {
+    --bg: #faf9f6; --surface: #ffffff; --ink: #1c1b19; --muted: #6b6860; --line: #e6e3dc;
+    --accent: #0f7a5c; --accent-ink: #ffffff; --accent-soft: #e3f2ec; --warn: #a3401c; --warn-soft: #fbe9e2;
+    --radius: 10px; --shadow: 0 1px 2px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151514; --surface: #1f1f1d; --ink: #f1efe9; --muted: #a29f97; --line: #33322f;
+      --accent: #3cc497; --accent-ink: #0b1f18; --accent-soft: #19332a; --warn: #f08a63; --warn-soft: #3a2219; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: inherit; }
+  header { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+  .bar { max-width: 1100px; margin: 0 auto; padding: 12px 16px; display: flex; gap: 16px; align-items: center; }
+  .logo { font-weight: 800; letter-spacing: -.02em; font-size: 20px; text-decoration: none; }
+  .logo span { color: var(--accent); }
+  nav { margin-left: auto; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  nav a { text-decoration: none; color: var(--muted); font-size: 15px; }
+  nav a:hover { color: var(--ink); }
+  @media (max-width: 560px) { .bar { gap: 10px; } nav { gap: 10px; } nav a { font-size: 14px; } nav .btn { padding: 6px 12px; } }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: clamp(26px, 4vw, 38px); letter-spacing: -.02em; line-height: 1.15; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin: 32px 0 12px; }
+  .muted { color: var(--muted); }
+  .btn { display: inline-block; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+    padding: 9px 16px; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer; text-decoration: none; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .btn.danger { color: var(--warn); }
+  .btn:disabled { opacity: .5; cursor: not-allowed; }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 20px 0; }
+  input, select, textarea { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line);
+    border-radius: 8px; padding: 9px 11px; width: 100%; }
+  .filters input { flex: 1 1 220px; width: auto; } .filters select { width: auto; }
+  textarea { min-height: 120px; resize: vertical; }
+  label { display: block; font-weight: 600; font-size: 14px; margin: 14px 0 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+    overflow: hidden; display: flex; flex-direction: column; text-decoration: none; }
+  .card .cover { aspect-ratio: 16/9; display: grid; place-items: center; font-size: 44px; font-weight: 800; color: #fff; }
+  .card .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .card h3 { margin: 0; font-size: 17px; line-height: 1.3; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 99px;
+    background: var(--accent-soft); color: var(--accent); }
+  .tag.gray { background: var(--line); color: var(--muted); }
+  .progress { height: 6px; background: var(--line); border-radius: 99px; overflow: hidden; margin-top: auto; }
+  .progress > i { display: block; height: 100%; background: var(--accent); }
+  .stats { display: flex; gap: 16px; font-size: 14px; color: var(--muted); flex-wrap: wrap; }
+  .stats b { color: var(--ink); }
+  .detail { display: grid; grid-template-columns: 1fr 340px; gap: 32px; align-items: start; }
+  @media (max-width: 860px) { .detail { grid-template-columns: 1fr; } }
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+  .big { font-size: 30px; font-weight: 800; letter-spacing: -.02em; }
+  .reward { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; margin-bottom: 12px; background: var(--surface); }
+  .reward.selected { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+  .reward h4 { margin: 4px 0; }
+  .note { padding: 12px 14px; border-radius: 8px; background: var(--accent-soft); font-size: 14px; margin: 12px 0; }
+  .note.warn { background: var(--warn-soft); color: var(--warn); }
+  .story { white-space: pre-wrap; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 560px) { .row { grid-template-columns: 1fr; } }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .table-wrap { overflow-x: auto; }
+  .narrow { max-width: 440px; margin: 0 auto; }
+  .form { max-width: 720px; }
+  .reward-edit { border: 1px dashed var(--line); border-radius: var(--radius); padding: 12px; margin: 12px 0; }
+  #toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg);
+    padding: 10px 16px; border-radius: 8px; font-size: 14px; opacity: 0; transition: opacity .2s; pointer-events: none; max-width: calc(100% - 32px); }
+  #toast.show { opacity: 1; }
+  footer { border-top: 1px solid var(--line); padding: 24px 16px; text-align: center; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="logo" href="#/">back<span>yard</span></a>
+  <nav id="nav"></nav>
+</div></header>
+<main id="app"><p class="muted">Loading…</p></main>
+<footer>Backyard is a rewards and donations platform. Backing a project is not an investment and does not buy equity.
+  Creators are responsible for fulfilling rewards.</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+const $ = (sel) => document.querySelector(sel);
+const app = $('#app');
+const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const usd = (cents, whole) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: whole ? 0 : 2 }).format(cents / 100);
+const toCents = (v) => Math.round(Number(String(v).replace(/[$,]/g, '')) * 100);
+const state = { token: localStorage.getItem('token'), user: null, meta: null };
+
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 3500); }
+
+async function api(path, opts = {}) {
+  const res = await fetch('/api' + path, {
+    method: opts.method || 'GET',
+    headers: { 'content-type': 'application/json', ...(state.token ? { authorization: 'Bearer ' + state.token } : {}) },
+    ...(opts.body ? { body: JSON.stringify(opts.body) } : {}),
+  });
+  const data = await res.json();
+  if (!res.ok) { const e = new Error(data.error || 'Request failed'); e.issues = data.issues || []; throw e; }
+  return data;
+}
+function showError(e) { toast(e.issues && e.issues.length ? e.issues.map((i) => i.message).join(' ') : e.message); }
+
+function timeLeft(secs) {
+  if (secs == null) return '';
+  if (secs <= 0) return 'Ending now';
+  const d = Math.floor(secs / 86400); if (d >= 1) return `${d} day${d === 1 ? '' : 's'} left`;
+  const h = Math.floor(secs / 3600); if (h >= 1) return `${h} hour${h === 1 ? '' : 's'} left`;
+  return `${Math.ceil(secs / 60)} min left`;
+}
+function cover(c) {
+  if (c.imageUrl) return `<div class="cover" style="background:center/cover url('${esc(c.imageUrl)}')"></div>`;
+  let h = 0; for (const ch of c.title) h = (h * 31 + ch.charCodeAt(0)) % 360;
+  return `<div class="cover" style="background:linear-gradient(135deg,hsl(${h} 45% 42%),hsl(${(h + 50) % 360} 50% 30%))">${esc(c.title[0] || '?')}</div>`;
+}
+const statusLabel = { draft: 'Draft', in_review: 'In review', approved: 'Approved — ready to launch', rejected: 'Changes requested',
+  live: 'Live', successful: 'Funded', unsuccessful: 'Not funded', cancelled: 'Cancelled' };
+const modelLabel = { all_or_nothing: 'All-or-nothing', keep_it_all: 'Keep what you raise' };
+
+function renderNav() {
+  const u = state.user;
+  $('#nav').innerHTML = `<a href="#/">Explore</a><a href="#/start">Start a project</a>` +
+    (u ? `<a href="#/dashboard">Dashboard</a>${u.isAdmin ? '<a href="#/admin">Review</a>' : ''}<a href="#" id="logout">Log out</a>`
+       : `<a class="btn primary" href="#/login">Log in</a>`);
+  const lo = $('#logout');
+  if (lo) lo.onclick = async (ev) => { ev.preventDefault(); await api('/auth/logout', { method: 'POST' }).catch(() => {});
+    state.token = null; state.user = null; localStorage.removeItem('token'); renderNav(); location.hash = '#/'; };
+}
+
+function card(c) {
+  const pct = Math.min(100, c.stats.percentFunded);
+  return `<a class="card" href="#/c/${encodeURIComponent(c.slug)}">${cover(c)}<div class="body">
+    <div><span class="tag">${esc(c.category)}</span> ${c.status !== 'live' ? `<span class="tag gray">${statusLabel[c.status]}</span>` : ''}
+      ${c.taxDeductible ? '<span class="tag gray">Tax-deductible</span>' : ''}</div>
+    <h3>${esc(c.title)}</h3><div class="muted" style="font-size:14px">${esc(c.blurb)}</div>
+    <div class="muted" style="font-size:13px">${esc(c.creatorName)} · ${esc(c.city)}, ${esc(c.state)}</div>
+    <div class="progress"><i style="width:${pct}%"></i></div>
+    <div class="stats"><span><b>${usd(c.stats.pledgedCents, true)}</b> of ${usd(c.goalCents, true)}</span><span><b>${c.stats.percentFunded}%</b></span>
+      <span>${c.status === 'live' ? timeLeft(c.stats.secondsLeft) : ''}</span></div>
+  </div></a>`;
+}
+
+async function pageExplore(params) {
+  const q = new URLSearchParams(params);
+  const list = await api('/campaigns?' + q);
+  const opt = (v, label, cur) => `<option value="${esc(v)}" ${v === cur ? 'selected' : ''}>${esc(label)}</option>`;
+  app.innerHTML = `<h1>Fund what's next in your backyard.</h1>
+    <p class="muted">Independent creators and community projects across all 50 states.</p>
+    <form class="filters" id="f">
+      <input name="q" placeholder="Search projects" value="${esc(q.get('q') || '')}" aria-label="Search">
+      <select name="category" aria-label="Category">${opt('', 'All categories', q.get('category') || '')}${state.meta.categories.map((c) => opt(c, c[0].toUpperCase() + c.slice(1), q.get('category'))).join('')}</select>
+      <select name="state" aria-label="State">${opt('', 'All states', q.get('state') || '')}${Object.entries(state.meta.states).map(([k, v]) => opt(k, v, q.get('state'))).join('')}</select>
+      <select name="sort" aria-label="Sort">${[['newest', 'Newest'], ['ending', 'Ending soon'], ['funded', 'Most funded']].map(([k, v]) => opt(k, v, q.get('sort') || 'newest')).join('')}</select>
+    </form>
+    <div class="grid">${list.map(card).join('') || '<p class="muted">No projects match those filters yet.</p>'}</div>`;
+  const f = $('#f');
+  const go = () => { const p = new URLSearchParams(new FormData(f)); [...p.keys()].forEach((k) => !p.get(k) && p.delete(k)); location.hash = '#/?' + p; };
+  f.onchange = go; f.onsubmit = (e) => { e.preventDefault(); go(); };
+}
+
+async function pageCampaign(slug) {
+  const c = await api('/campaigns/' + encodeURIComponent(slug));
+  let selected = null;
+  const isOwner = state.user && state.user.id === c.creatorId;
+  const live = c.status === 'live';
+  const rewardsHtml = c.rewards.map((r) => `<div class="reward" data-id="${esc(r.id)}">
+      <div class="muted" style="font-size:14px">Pledge ${usd(r.minimumCents)} or more</div>
+      <h4>${esc(r.title)}</h4><div style="font-size:14px">${esc(r.description)}</div>
+      <div class="muted" style="font-size:13px;margin-top:6px">Est. delivery ${esc(r.estimatedDelivery)} ·
+        ${r.shipping === 'none' ? 'No shipping' : r.shipping === 'us_only' ? 'Ships within the US' : 'Ships worldwide'}${r.shippingCents ? ` (+${usd(r.shippingCents)})` : ''}
+        · ${r.claimed} backer${r.claimed === 1 ? '' : 's'}${r.remaining != null ? ` · ${r.remaining} left` : ''}</div>
+      ${live && !isOwner ? `<button class="btn" style="margin-top:10px" ${r.remaining === 0 ? 'disabled' : ''}>${r.remaining === 0 ? 'Sold out' : 'Select'}</button>` : ''}
+    </div>`).join('');
+  app.innerHTML = `<div class="detail"><div>
+      <div><span class="tag">${esc(c.category)}</span> <span class="tag gray">${modelLabel[c.fundingModel]}</span>
+        ${c.taxDeductible ? '<span class="tag gray">Tax-deductible 501(c)(3)</span>' : ''}</div>
+      <h1 style="margin-top:10px">${esc(c.title)}</h1>
+      <p class="muted" style="font-size:18px;margin-top:0">${esc(c.blurb)}</p>
+      <p class="muted" style="font-size:14px">by <b>${esc(c.creatorName)}</b> · ${esc(c.city)}, ${esc(c.state)}</p>
+      ${c.reviewNotes ? `<div class="note warn">Reviewer notes: ${esc(c.reviewNotes)}</div>` : ''}
+      <div class="card" style="margin:18px 0">${cover(c)}</div>
+      <h2>About this project</h2><div class="story">${esc(c.story)}</div>
+      ${c.nonprofit ? `<p class="muted" style="font-size:14px">EIN ${esc(c.nonprofit.ein)}${c.taxDeductible ? ' — verified 501(c)(3). Donations made without a reward may be tax-deductible; consult your tax advisor.' : ' — not yet verified.'}</p>` : ''}
+    </div>
+    <aside>
+      <div class="panel">
+        <div class="big">${usd(c.stats.pledgedCents, true)}</div>
+        <div class="muted">pledged of ${usd(c.goalCents, true)} goal</div>
+        <div class="progress" style="margin:12px 0"><i style="width:${Math.min(100, c.stats.percentFunded)}%"></i></div>
+        <div class="stats"><span><b>${c.stats.backers}</b> backers</span><span><b>${c.stats.percentFunded}%</b> funded</span>
+          <span><b>${live ? timeLeft(c.stats.secondsLeft) : statusLabel[c.status]}</b></span></div>
+        <p class="muted" style="font-size:13px">${c.fundingModel === 'all_or_nothing'
+          ? `All-or-nothing. Your card is only charged if this project reaches its goal by ${c.deadline ? new Date(c.deadline).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }) : 'the deadline'}.`
+          : 'Keep what you raise. Your card is charged when you pledge, and the creator receives funds even if the goal is not met.'}</p>
+        ${live && !isOwner ? `<form id="pledge">
+          <label for="amt">Pledge amount (USD)</label><input id="amt" name="amount" inputmode="decimal" value="25">
+          <div id="ship" hidden>
+            <label>Shipping address</label>
+            <input name="name" placeholder="Full name" style="margin-bottom:8px"><input name="line1" placeholder="Street address" style="margin-bottom:8px">
+            <div class="row"><input name="city" placeholder="City"><input name="state" placeholder="State / region"></div>
+            <div class="row" style="margin-top:8px"><input name="zip" placeholder="ZIP / postal code"><input name="country" placeholder="Country (US)" value="US" maxlength="2"></div>
+          </div>
+          <label for="card">Card</label>
+          <select id="card" name="card"><option value="tok_visa">Test Visa •••• 4242</option><option value="tok_chargeDeclined">Test card that declines at charge</option></select>
+          <label style="font-weight:400;display:flex;gap:8px;align-items:center"><input type="checkbox" name="anonymous" style="width:auto"> Back anonymously</label>
+          <p id="sel" class="muted" style="font-size:14px">No reward — just support the project.</p>
+          <button class="btn primary" style="width:100%">Back this project</button>
+        </form>` : isOwner ? '<p class="muted">This is your project.</p>' : ''}
+      </div>
+      ${c.rewards.length ? `<h2>Rewards</h2>${rewardsHtml}` : ''}
+    </aside></div>`;
+
+  const form = $('#pledge');
+  if (!form) return;
+  document.querySelectorAll('.reward button').forEach((b) => (b.onclick = () => {
+    const el = b.closest('.reward');
+    selected = c.rewards.find((r) => r.id === el.dataset.id);
+    document.querySelectorAll('.reward').forEach((x) => x.classList.toggle('selected', x === el));
+    form.amount.value = ((selected.minimumCents + selected.shippingCents) / 100).toFixed(2);
+    $('#sel').textContent = `Reward: ${selected.title}${selected.shippingCents ? ` (includes ${usd(selected.shippingCents)} shipping)` : ''}`;
+    $('#ship').hidden = selected.shipping === 'none';
+    form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }));
+  form.onsubmit = async (e) => {
+    e.preventDefault();
+    if (!state.user) { sessionStorage.setItem('after', location.hash); location.hash = '#/login'; return; }
+    const f = form.elements;
+    const body = { amountCents: toCents(f.amount.value), paymentToken: f.card.value, anonymous: f.anonymous.checked };
+    if (selected) {
+      body.rewardId = selected.id;
+      if (selected.shipping !== 'none') body.shippingAddress = { name: f.name.value, line1: f.line1.value, city: f.city.value,
+        state: f.state.value.toUpperCase(), zip: f.zip.value, country: (f.country.value || 'US').toUpperCase() };
+    }
+    try {
+      const p = await api(`/campaigns/${c.id}/pledges`, { method: 'POST', body });
+      toast(p.status === 'pending' ? 'Pledge saved. You will be charged only if the project is funded.' : `Thank you! ${usd(p.amountCents)} charged.`);
+      pageCampaign(slug);
+    } catch (err) { showError(err); }
+  };
+}
+
+function pageLogin() {
+  app.innerHTML = `<div class="narrow"><h1>Welcome</h1><p class="muted">Log in or create an account to back and launch projects.</p>
+    <form id="login" class="panel"><label>Email</label><input name="email" type="email" autocomplete="email" required>
+      <label>Password</label><input name="password" type="password" autocomplete="current-password" required>
+      <div id="nm" hidden><label>Your name</label><input name="name" autocomplete="name"></div>
+      <div style="display:flex;gap:8px;margin-top:16px"><button class="btn primary" name="mode" value="login">Log in</button>
+      <button class="btn" type="button" id="reg">Create account</button></div></form>
+    <p class="muted" style="font-size:13px">Demo: admin@example.com, creator@example.com or backer@example.com — password demo1234.</p></div>`;
+  const form = $('#login');
+  let registering = false;
+  $('#reg').onclick = () => { if (!registering) { registering = true; $('#nm').hidden = false; form.mode.textContent = 'Sign up'; $('#reg').hidden = true; } };
+  form.onsubmit = async (e) => {
+    e.preventDefault();
+    const body = Object.fromEntries(new FormData(form));
+    try {
+      const r = await api(registering ? '/auth/register' : '/auth/login', { method: 'POST', body });
+      state.token = r.token; state.user = r.user; localStorage.setItem('token', r.token); renderNav();
+      location.hash = sessionStorage.getItem('after') || '#/'; sessionStorage.removeItem('after');
+    } catch (err) { showError(err); }
+  };
+}
+
+function requireLogin() { if (state.user) return true; sessionStorage.setItem('after', location.hash); location.hash = '#/login'; return false; }
+
+function rewardEditor(r = {}) {
+  return `<div class="reward-edit"><div class="row"><div><label>Reward title</label><input data-k="title" value="${esc(r.title)}"></div>
+    <div><label>Minimum pledge (USD)</label><input data-k="minimum" inputmode="decimal" value="${r.minimumCents != null ? r.minimumCents / 100 : ''}"></div></div>
+    <label>Description</label><input data-k="description" value="${esc(r.description)}">
+    <div class="row"><div><label>Estimated delivery</label><input data-k="estimatedDelivery" type="month" value="${esc(r.estimatedDelivery)}"></div>
+    <div><label>Quantity limit (optional)</label><input data-k="quantityLimit" inputmode="numeric" value="${esc(r.quantityLimit ?? '')}"></div></div>
+    <div class="row"><div><label>Shipping</label><select data-k="shipping">${[['none', 'Digital / no shipping'], ['us_only', 'US only'], ['worldwide', 'Worldwide']]
+      .map(([k, v]) => `<option value="${k}" ${r.shipping === k ? 'selected' : ''}>${v}</option>`).join('')}</select></div>
+    <div><label>Shipping cost (USD)</label><input data-k="shippingCost" inputmode="decimal" value="${r.shippingCents ? r.shippingCents / 100 : 0}"></div></div>
+    <button type="button" class="btn danger" style="margin-top:10px" data-remove>Remove reward</button></div>`;
+}
+
+async function pageEditor(id) {
+  if (!requireLogin()) return;
+  const c = id ? await api('/campaigns/' + id) : null;
+  const v = (k, d = '') => esc(c ? c[k] : d);
+  const opt = (val, label, cur) => `<option value="${esc(val)}" ${val === cur ? 'selected' : ''}>${esc(label)}</option>`;
+  app.innerHTML = `<div class="form"><h1>${c ? 'Edit your project' : 'Start a project'}</h1>
+    <p class="muted">Rewards-based and donation projects only. Offering equity, revenue share or profit share is a securities offering and is not allowed here.</p>
+    ${c?.reviewNotes ? `<div class="note warn">Reviewer notes: ${esc(c.reviewNotes)}</div>` : ''}
+    <form id="ed">
+      <label>Project title</label><input name="title" value="${v('title')}" maxlength="80" required>
+      <label>Short description</label><input name="blurb" value="${v('blurb')}" maxlength="160">
+      <label>Story</label><textarea name="story">${v('story')}</textarea>
+      <div class="row"><div><label>Category</label><select name="category">${state.meta.categories.map((x) => opt(x, x, c?.category || 'technology')).join('')}</select></div>
+      <div><label>Funding model</label><select name="fundingModel">${opt('all_or_nothing', 'All-or-nothing', c?.fundingModel || 'all_or_nothing')}${opt('keep_it_all', 'Keep what you raise', c?.fundingModel)}</select></div></div>
+      <div class="row"><div><label>Goal (USD)</label><input name="goal" inputmode="decimal" value="${c ? c.goalCents / 100 : 10000}"></div>
+      <div><label>Duration (days, max 60)</label><input name="durationDays" type="number" min="1" max="60" value="${c ? c.durationDays : 30}"></div></div>
+      <div class="row"><div><label>City</label><input name="city" value="${v('city')}"></div>
+      <div><label>State</label><select name="state">${opt('', 'Select…', c?.state || '')}${Object.entries(state.meta.states).map(([k, n]) => opt(k, n, c?.state)).join('')}</select></div></div>
+      <label>Cover image URL (optional, https)</label><input name="imageUrl" value="${v('imageUrl')}">
+      <label>Nonprofit EIN (optional, for verified 501(c)(3) organizations)</label><input name="nonprofitEin" placeholder="12-3456789" value="${esc(c?.nonprofit?.ein || '')}">
+      <h2>Rewards</h2><div id="rewards">${(c?.rewards || []).map(rewardEditor).join('')}</div>
+      <button type="button" class="btn" id="add">Add reward</button>
+      <div style="display:flex;gap:8px;margin-top:24px;flex-wrap:wrap"><button class="btn">Save draft</button>
+        <button class="btn primary" type="button" id="submit">Save and submit for review</button></div>
+    </form></div>`;
+  const form = $('#ed');
+  const wire = () => document.querySelectorAll('[data-remove]').forEach((b) => (b.onclick = () => b.closest('.reward-edit').remove()));
+  wire();
+  $('#add').onclick = () => { $('#rewards').insertAdjacentHTML('beforeend', rewardEditor({ shipping: 'none' })); wire(); };
+  const collect = () => {
+    const f = form.elements;
+    return {
+      title: f.title.value, blurb: f.blurb.value, story: f.story.value, category: f.category.value, fundingModel: f.fundingModel.value,
+      goalCents: toCents(f.goal.value), durationDays: Number(f.durationDays.value), city: f.city.value, state: f.state.value,
+      imageUrl: f.imageUrl.value.trim(), nonprofitEin: f.nonprofitEin.value.trim() || null,
+      rewards: [...document.querySelectorAll('.reward-edit')].map((el) => {
+        const g = (k) => el.querySelector(`[data-k="${k}"]`).value;
+        return { title: g('title'), description: g('description'), minimumCents: toCents(g('minimum')), estimatedDelivery: g('estimatedDelivery'),
+          shipping: g('shipping'), shippingCents: toCents(g('shippingCost') || 0), ...(g('quantityLimit') ? { quantityLimit: Number(g('quantityLimit')) } : {}) };
+      }),
+    };
+  };
+  const save = async () => {
+    const body = collect();
+    return c ? api('/campaigns/' + c.id, { method: 'PATCH', body }) : api('/campaigns', { method: 'POST', body });
+  };
+  form.onsubmit = async (e) => { e.preventDefault(); try { const s = await save(); toast('Draft saved.'); if (!c) location.hash = '#/edit/' + s.id; } catch (err) { showError(err); } };
+  $('#submit').onclick = async () => {
+    try { const s = await save(); await api(`/campaigns/${s.id}/submit`, { method: 'POST' }); toast('Submitted for review.'); location.hash = '#/dashboard'; }
+    catch (err) { showError(err); }
+  };
+}
+
+async function pageDashboard() {
+  if (!requireLogin()) return;
+  const [{ user }, mine, pledges] = await Promise.all([api('/me'), api('/me/campaigns'), api('/me/pledges')]);
+  state.user = user;
+  const cp = user.creator;
+  const setupDone = cp && cp.identityVerified && cp.payoutAccountRef;
+  app.innerHTML = `<h1>Hi, ${esc(user.name)}</h1>
+    <h2>Creator account</h2>
+    <div class="panel form">${setupDone ? '<p>✓ Identity verified and payout account connected. You can launch approved projects.</p>' : `
+      <p class="muted">To launch a project you must be 18 or older, live in the US, verify your identity and connect a US bank account.</p>
+      <form id="cp"><div class="row"><div><label>Legal name</label><input name="legalName" value="${esc(cp?.legalName)}"></div>
+        <div><label>Date of birth</label><input name="dateOfBirth" type="date" value="${esc(cp?.dateOfBirth)}"></div></div>
+        <label>State of residence</label><select name="state"><option value="">Select…</option>${Object.entries(state.meta.states).map(([k, n]) => `<option value="${k}" ${cp?.state === k ? 'selected' : ''}>${esc(n)}</option>`).join('')}</select>
+        <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap"><button class="btn">Save profile</button>
+        ${cp && !cp.payoutAccountRef ? '<button type="button" class="btn primary" id="payout">Connect bank account</button>' : ''}</div></form>
+      <p class="muted" style="font-size:13px">Identity: ${cp ? (cp.identityVerified ? 'verified' : 'pending review') : 'not started'} · Payouts: ${cp?.payoutAccountRef ? 'connected' : 'not connected'}</p>`}
+    </div>
+    <h2>Your projects</h2>
+    ${mine.length ? `<div class="table-wrap"><table><tr><th>Project</th><th>Status</th><th>Pledged</th><th></th></tr>${mine.map((c) => `<tr>
+      <td><a href="#/c/${encodeURIComponent(c.slug)}">${esc(c.title)}</a></td><td>${statusLabel[c.status]}</td>
+      <td>${usd(c.stats.pledgedCents, true)} / ${usd(c.goalCents, true)}</td>
+      <td style="white-space:nowrap">${['draft', 'rejected'].includes(c.status) ? `<a class="btn" href="#/edit/${c.id}">Edit</a>` : ''}
+        ${c.status === 'approved' ? `<button class="btn primary" data-launch="${c.id}">Launch</button>` : ''}
+        ${['live', 'successful', 'unsuccessful'].includes(c.status) ? `<a class="btn" href="#/backers/${c.id}">Backers</a>` : ''}</td></tr>`).join('')}</table></div>`
+      : '<p class="muted">No projects yet. <a href="#/start">Start one</a>.</p>'}
+    <h2>Projects you've backed</h2>
+    ${pledges.length ? `<div class="table-wrap"><table><tr><th>Project</th><th>Amount</th><th>Status</th><th></th></tr>${pledges.map((p) => `<tr>
+      <td>${p.campaign ? `<a href="#/c/${encodeURIComponent(p.campaign.slug)}">${esc(p.campaign.title)}</a>` : '—'}</td><td>${usd(p.amountCents)}</td>
+      <td>${{ pending: 'Card saved — charged if funded', collected: 'Charged', failed: 'Payment failed', cancelled: 'Cancelled', refunded: 'Refunded' }[p.status]}</td>
+      <td>${p.status === 'pending' && p.campaign?.status === 'live' ? `<button class="btn danger" data-cancel="${p.id}">Cancel</button>` : ''}</td></tr>`).join('')}</table></div>`
+      : '<p class="muted">You haven\'t backed anything yet.</p>'}`;
+  const cpf = $('#cp');
+  if (cpf) cpf.onsubmit = async (e) => { e.preventDefault(); try { await api('/me/creator-profile', { method: 'PUT', body: Object.fromEntries(new FormData(cpf)) }); toast('Profile saved. Identity verification is pending.'); pageDashboard(); } catch (err) { showError(err); } };
+  const pb = $('#payout');
+  if (pb) pb.onclick = async () => { try { await api('/me/payout-account', { method: 'POST' }); toast('Bank account connected.'); pageDashboard(); } catch (err) { showError(err); } };
+  document.querySelectorAll('[data-launch]').forEach((b) => (b.onclick = async () => { try { await api(`/campaigns/${b.dataset.launch}/launch`, { method: 'POST' }); toast('You are live!'); pageDashboard(); } catch (err) { showError(err); } }));
+  document.querySelectorAll('[data-cancel]').forEach((b) => (b.onclick = async () => { if (!confirm('Cancel this pledge?')) return; try { await api(`/pledges/${b.dataset.cancel}`, { method: 'DELETE' }); toast('Pledge cancelled.'); pageDashboard(); } catch (err) { showError(err); } }));
+}
+
+async function pageBackers(id) {
+  if (!requireLogin()) return;
+  const [c, rows] = await Promise.all([api('/campaigns/' + id), api(`/campaigns/${id}/pledges`)]);
+  const rewardTitle = Object.fromEntries(c.rewards.map((r) => [r.id, r.title]));
+  app.innerHTML = `<h1>Backers</h1><p class="muted">${esc(c.title)} — ${rows.length} pledges</p>
+    ${c.payout ? `<div class="note">Paid out ${usd(c.payout.net)} (gross ${usd(c.payout.gross)}, platform fee ${usd(c.payout.platformFee)}, processing ${usd(c.payout.processingFees)}).</div>` : ''}
+    <div class="table-wrap"><table><tr><th>Backer</th><th>Reward</th><th>Amount</th><th>Status</th><th>Ship to</th></tr>${rows.map((p) => `<tr>
+      <td>${esc(p.backerName)}<br><span class="muted">${esc(p.backerEmail)}</span></td><td>${esc(rewardTitle[p.rewardId] || 'No reward')}</td>
+      <td>${usd(p.amountCents)}</td><td>${esc(p.status)}</td>
+      <td>${p.shippingAddress ? esc([p.shippingAddress.name, p.shippingAddress.line1, `${p.shippingAddress.city}, ${p.shippingAddress.state} ${p.shippingAddress.zip}`, p.shippingAddress.country].join(', ')) : '—'}</td></tr>`).join('')}</table></div>`;
+}
+
+async function pageAdmin() {
+  if (!requireLogin()) return;
+  const queue = await api('/admin/review-queue');
+  app.innerHTML = `<h1>Review queue</h1>
+    <p class="muted">Check for prohibited content, securities offerings, realistic rewards, and verify any nonprofit EIN against the IRS Tax Exempt Organization Search before approving.</p>
+    ${queue.map((c) => `<div class="panel" style="margin-bottom:16px" data-id="${c.id}">
+      <h2 style="margin-top:0">${esc(c.title)}</h2><p>${esc(c.blurb)}</p>
+      <p class="muted" style="font-size:14px">${esc(c.category)} · ${modelLabel[c.fundingModel]} · goal ${usd(c.goalCents, true)} · ${c.durationDays} days · ${esc(c.city)}, ${esc(c.state)}
+        ${c.nonprofit ? ` · EIN ${esc(c.nonprofit.ein)}` : ''}</p>
+      <details><summary>Story and rewards</summary><div class="story" style="margin:10px 0">${esc(c.story)}</div>
+        <ul>${c.rewards.map((r) => `<li>${esc(r.title)} — ${usd(r.minimumCents)} — ${esc(r.description)}</li>`).join('')}</ul></details>
+      <label>Notes to creator</label><input data-notes>
+      ${c.nonprofit ? '<label style="font-weight:400;display:flex;gap:8px"><input type="checkbox" data-np style="width:auto"> EIN verified as 501(c)(3)</label>' : ''}
+      <div style="display:flex;gap:8px;margin-top:12px"><button class="btn primary" data-approve>Approve</button><button class="btn danger" data-reject>Request changes</button></div>
+    </div>`).join('') || '<p class="muted">Nothing waiting for review.</p>'}
+    <h2>Settlement</h2><p class="muted">Campaigns are settled automatically every minute after their deadline.</p>
+    <button class="btn" id="settle">Run settlement now</button>`;
+  document.querySelectorAll('[data-id]').forEach((el) => {
+    const act = (approve) => async () => {
+      try { await api(`/admin/campaigns/${el.dataset.id}/review`, { method: 'POST', body: { approve, notes: el.querySelector('[data-notes]').value, nonprofitVerified: !!el.querySelector('[data-np]')?.checked } });
+        toast(approve ? 'Approved.' : 'Sent back to creator.'); pageAdmin(); } catch (err) { showError(err); }
+    };
+    el.querySelector('[data-approve]').onclick = act(true);
+    el.querySelector('[data-reject]').onclick = act(false);
+  });
+  $('#settle').onclick = async () => { try { const r = await api('/admin/settle', { method: 'POST' }); toast(`Settled ${r.length} campaign(s).`); } catch (err) { showError(err); } };
+}
+
+async function route() {
+  const [path, query = ''] = location.hash.slice(1).split('?');
+  const parts = (path || '/').split('/').filter(Boolean);
+  window.scrollTo(0, 0);
+  try {
+    if (!parts.length) return await pageExplore(query);
+    const [head, arg] = parts;
+    if (head === 'c' && arg) return await pageCampaign(decodeURIComponent(arg));
+    if (head === 'login') return pageLogin();
+    if (head === 'start') return await pageEditor(null);
+    if (head === 'edit' && arg) return await pageEditor(arg);
+    if (head === 'dashboard') return await pageDashboard();
+    if (head === 'backers' && arg) return await pageBackers(arg);
+    if (head === 'admin') return await pageAdmin();
+    app.innerHTML = '<h1>Page not found</h1><p><a href="#/">Back to projects</a></p>';
+  } catch (err) {
+    app.innerHTML = `<h1>Something went wrong</h1><p class="muted">${esc(err.message)}</p><p><a href="#/">Back to projects</a></p>`;
+  }
+}
+
+(async () => {
+  state.meta = await api('/meta');
+  if (state.token) {
+    try { state.user = (await api('/me')).user; } catch { state.token = null; localStorage.removeItem('token'); }
+  }
+  renderNav();
+  window.addEventListener('hashchange', route);
+  route();
+})();
+</script>
+</body>
+</html>
