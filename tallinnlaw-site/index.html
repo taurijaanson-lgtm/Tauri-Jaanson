@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tallinna Õigusbüroo</title>
+<meta name="description" content="Tallinna Õigusbüroo – kliendikeskne ja efektiivne õigusabi äri-, lepingu-, töö-, asja-, perekonna-, maksu-, haldus- ja karistusõiguses. Teenindame eesti, inglise, vene ja soome keeles.">
+<meta name="theme-color" content="#0f1a2b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f3ee; --surface:#ffffff; --surface-2:#efe9df; --ink:#0f1a2b; --ink-2:#3b4656; --muted:#6b7482;
+  --line:#ddd5c8; --accent:#a8793a; --accent-ink:#7d5521; --hero:#0f1a2b; --hero-ink:#f6f3ee; --hero-muted:#a9b3c2;
+  --radius:18px; --shadow:0 1px 2px rgba(15,26,43,.05),0 8px 30px rgba(15,26,43,.06);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b121d; --surface:#111b2a; --surface-2:#16223400; --ink:#eef1f5; --ink-2:#c3cad5; --muted:#8a95a6;
+  --line:#223047; --accent:#d4a55f; --accent-ink:#e6bd7f; --hero:#070c14; --hero-ink:#f6f3ee; --hero-muted:#8d98aa;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.25);
+}}
+:root[data-theme="dark"]{
+  --bg:#0b121d; --surface:#111b2a; --surface-2:#16223400; --ink:#eef1f5; --ink-2:#c3cad5; --muted:#8a95a6;
+  --line:#223047; --accent:#d4a55f; --accent-ink:#e6bd7f; --hero:#070c14; --hero-ink:#f6f3ee; --hero-muted:#8d98aa;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+@media(min-width:720px){.wrap{padding:0 32px}}
+.serif{font-family:Fraunces,Georgia,serif;font-weight:500;letter-spacing:-.02em}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);font-weight:600}
+
+/* Header */
+header.top{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s,color .3s;color:var(--hero-ink)}
+header.top.scrolled{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark{width:38px;height:38px;border-radius:10px;border:1.5px solid currentColor;display:grid;place-items:center;font-family:Fraunces,serif;font-size:1.05rem}
+.brand b{font-family:Fraunces,serif;font-weight:500;font-size:1.12rem;letter-spacing:-.01em}
+.brand small{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;opacity:.65}
+.links{display:none;gap:28px;align-items:center}
+.links a{text-decoration:none;font-size:.93rem;opacity:.85}
+.links a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:.93rem;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:var(--accent);color:#111}
+.btn-ghost{background:transparent;border:1px solid currentColor}
+.icon-btn{background:none;border:1px solid color-mix(in srgb,currentColor 30%,transparent);color:inherit;width:40px;height:40px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.menu-btn{display:grid}
+@media(min-width:900px){.links{display:flex}.menu-btn{display:none}}
+.mobile{display:none;padding:8px 16px 20px;background:var(--bg);color:var(--ink);border-bottom:1px solid var(--line)}
+.mobile.open{display:grid;gap:4px}
+.mobile a{padding:12px 4px;text-decoration:none;border-bottom:1px solid var(--line)}
+
+/* Hero */
+.hero{background:var(--hero);color:var(--hero-ink);position:relative;overflow:hidden;padding:150px 0 90px}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(60% 80% at 85% 10%,rgba(212,165,95,.22),transparent 60%),
+  radial-gradient(50% 60% at 0% 100%,rgba(90,120,170,.18),transparent 60%)}
+.hero .grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(2.5rem,7vw,5.4rem);line-height:1.02;margin:18px 0 24px;max-width:14ch}
+.hero h1 em{font-style:italic;color:#d4a55f}
+.hero p.lead{font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--hero-muted);max-width:56ch;margin:0 0 36px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:72px;background:rgba(255,255,255,.1);border-radius:var(--radius);overflow:hidden}
+@media(min-width:720px){.facts{grid-template-columns:repeat(4,1fr)}}
+.fact{background:var(--hero);padding:22px 22px}
+.fact .n{font-family:Fraunces,serif;font-size:2.1rem;line-height:1}
+.fact .l{font-size:.85rem;color:var(--hero-muted);margin-top:6px}
+.langs{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.langs span{font-size:.72rem;border:1px solid rgba(255,255,255,.25);border-radius:6px;padding:2px 7px;letter-spacing:.06em}
+
+/* Sections */
+section{padding:96px 0}
+.head{display:grid;gap:14px;margin-bottom:48px;max-width:720px}
+.head h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.08;margin:0}
+.head p{color:var(--ink-2);margin:0;font-size:1.06rem}
+
+/* About */
+.about{display:grid;gap:40px}
+@media(min-width:900px){.about{grid-template-columns:1.1fr 1fr;gap:72px;align-items:start}}
+.about blockquote{margin:0;font-family:Fraunces,serif;font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.25;letter-spacing:-.01em}
+.about blockquote::before{content:"“";display:block;font-size:4rem;line-height:.6;color:var(--accent)}
+.about .text p{color:var(--ink-2);margin:0 0 18px}
+.pillars{display:grid;gap:14px;margin-top:28px}
+.pillar{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.pillar i{flex:none;width:34px;height:34px;border-radius:9px;background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent-ink);display:grid;place-items:center;font-style:normal;font-weight:600}
+.pillar b{display:block;margin-bottom:2px}
+.pillar span{color:var(--muted);font-size:.93rem}
+
+/* Services */
+#teenused{background:var(--surface);border-block:1px solid var(--line)}
+.finder{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:28px}
+.search{flex:1 1 280px;display:flex;align-items:center;gap:10px;padding:0 16px;height:52px;border:1px solid var(--line);border-radius:999px;background:var(--bg)}
+.search input{flex:1;border:0;background:none;font:inherit;color:inherit;outline:none;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--bg);color:var(--ink-2);padding:8px 14px;border-radius:999px;font:500 .86rem Inter,sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.services{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:640px){.services{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.services{grid-template-columns:repeat(3,1fr)}}
+.card{position:relative;padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s;text-align:left;font:inherit;color:inherit;width:100%}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--accent) 50%,var(--line))}
+.card .no{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.card h3{font-family:Fraunces,serif;font-weight:500;font-size:1.45rem;margin:14px 0 8px;letter-spacing:-.01em}
+.card p{margin:0;color:var(--ink-2);font-size:.95rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card .more{margin-top:16px;font-size:.86rem;font-weight:600;color:var(--accent-ink)}
+.card[hidden]{display:none}
+.empty{display:none;padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:var(--radius)}
+
+/* Dialog */
+dialog{border:0;border-radius:22px;padding:0;max-width:620px;width:calc(100% - 32px);background:var(--surface);color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(7,12,20,.6);backdrop-filter:blur(4px)}
+.dlg{padding:32px}
+.dlg h3{font-size:2rem;margin:8px 0 14px}
+.dlg p{color:var(--ink-2)}
+.dlg .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.dlg .x{position:absolute;top:16px;right:16px}
+
+/* Process */
+.steps{display:grid;gap:14px;counter-reset:s}
+@media(min-width:900px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{padding:26px;border-top:2px solid var(--ink);counter-increment:s}
+.step::before{content:"0" counter(s);font-family:Fraunces,serif;font-size:2.4rem;color:var(--accent)}
+.step h4{margin:10px 0 6px;font-size:1.08rem}
+.step p{margin:0;color:var(--ink-2);font-size:.95rem}
+
+/* Partners */
+.partners{display:grid;gap:14px}
+@media(min-width:800px){.partners{grid-template-columns:repeat(3,1fr)}}
+.partner{display:block;padding:26px;border-radius:var(--radius);border:1px solid var(--line);background:var(--surface);text-decoration:none;transition:border-color .2s}
+.partner:hover{border-color:var(--accent)}
+.partner b{font-family:Fraunces,serif;font-weight:500;font-size:1.25rem;display:block;margin-bottom:6px}
+.partner span{color:var(--ink-2);font-size:.93rem}
+.partner em{display:block;margin-top:14px;font-style:normal;font-size:.84rem;color:var(--accent-ink);font-weight:600}
+
+/* Contact */
+#kontakt{background:var(--hero);color:var(--hero-ink)}
+#kontakt .head p{color:var(--hero-muted)}
+#kontakt .eyebrow{color:#d4a55f}
+.contact{display:grid;gap:28px}
+@media(min-width:960px){.contact{grid-template-columns:1fr 1.1fr;gap:48px}}
+.offices{display:grid;gap:14px}
+.office{padding:26px;border-radius:var(--radius);border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)}
+.office h3{font-family:Fraunces,serif;font-weight:500;font-size:1.5rem;margin:0 0 10px}
+.office p{margin:0;color:var(--hero-muted);line-height:1.8}
+.office a{color:var(--hero-ink);text-decoration:none;border-bottom:1px solid rgba(212,165,95,.5)}
+.req{font-size:.85rem;color:var(--hero-muted);padding:4px 4px 0}
+form.f{display:grid;gap:14px;padding:30px;border-radius:22px;background:var(--surface);color:var(--ink)}
+.f h3{margin:0 0 4px;font-family:Fraunces,serif;font-weight:500;font-size:1.6rem}
+.f .sub{margin:0 0 6px;color:var(--muted);font-size:.93rem}
+.f label{display:grid;gap:6px;font-size:.84rem;font-weight:600;color:var(--ink-2)}
+.f input,.f textarea,.f select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:13px 14px;outline:none;width:100%}
+.f input:focus,.f textarea:focus,.f select:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.f textarea{min-height:130px;resize:vertical}
+.f .two{display:grid;gap:14px}
+@media(min-width:560px){.f .two{grid-template-columns:1fr 1fr}}
+.f .note{font-size:.8rem;color:var(--muted);margin:0}
+
+/* Links + footer */
+.useful{display:grid;gap:28px}
+@media(min-width:800px){.useful{grid-template-columns:repeat(3,1fr)}}
+.useful h4{margin:0 0 12px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.useful ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.useful a{text-decoration:none;border-bottom:1px solid var(--line)}
+.useful a:hover{border-color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.86rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#">
+      <span class="mark">TÕ</span>
+      <span><b>Tallinna Õigusbüroo</b><small>Tallinn · Tartu</small></span>
+    </a>
+    <nav class="links" aria-label="Peamenüü">
+      <a href="#buroost">Büroost</a>
+      <a href="#teenused">Teenused</a>
+      <a href="#partnerid">Partnerid</a>
+      <a href="#kontakt">Kontakt</a>
+      <button class="icon-btn" id="theme" aria-label="Vaheta heledat/tumedat teemat">◐</button>
+      <a class="btn btn-accent" href="#kontakt">Küsi nõu</a>
+    </nav>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Ava menüü" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile" id="mobile">
+    <a href="#buroost">Büroost</a><a href="#teenused">Teenused</a><a href="#partnerid">Partnerid</a><a href="#kontakt">Kontakt</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="grid-lines"></div>
+  <div class="wrap">
+    <span class="eyebrow" style="color:#d4a55f">Õigusbüroo · Äriõigus ja enam</span>
+    <h1 class="serif">Õigusabi, mis on <em>kliendi</em> poolel.</h1>
+    <p class="lead">Tallinna Õigusbüroo asutasid pikaajalise äriõiguse kogemusega juristid. Täna nõustame kõigis põhilistes õigusvaldkondades – kliendikeskselt ja efektiivselt.</p>
+    <div class="actions">
+      <a class="btn btn-accent" href="#kontakt">Broneeri konsultatsioon →</a>
+      <a class="btn btn-ghost" href="#teenused">Vaata teenuseid</a>
+    </div>
+    <div class="facts">
+      <div class="fact"><div class="n">11</div><div class="l">õigusvaldkonda</div></div>
+      <div class="fact"><div class="n">2</div><div class="l">kontorit – Tallinn ja Tartu</div></div>
+      <div class="fact"><div class="n">4</div><div class="l">teeninduskeelt<div class="langs"><span>ET</span><span>EN</span><span>RU</span><span>FI</span></div></div></div>
+      <div class="fact"><div class="n">1</div><div class="l">kontaktpunkt – notarid, audiitorid ja konsultandid koostöös</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="buroost">
+  <div class="wrap about">
+    <div class="reveal">
+      <span class="eyebrow">Büroost</span>
+      <blockquote style="margin-top:18px">Meie eesmärk on kliendi soovide ja vajaduste maksimaalne rahuldamine.</blockquote>
+    </div>
+    <div class="text reveal">
+      <p>Tallinna Õigusbüroo on asutatud isikute poolt, kes omavad pikaajalisi kogemusi äriõiguse valdkonnas. Täna osutab büroo õigusabi kõigis põhilistes õigusvaldkondades, olles eelkõige keskendunud äriõigusele ja sellega seotud valdkondadele.</p>
+      <p>Teeme pidevalt koostööd notaribüroode, audiitorbüroode, konsultatsioonifirmade ning teiste oma ala spetsialistidega, mistõttu suudame pakkuda klientidele heal professionaalsel tasemel teenust.</p>
+      <div class="pillars">
+        <div class="pillar"><i>01</i><div><b>Äriõiguse fookus</b><span>Asutamisest ühinemiste ja investeeringuteni.</span></div></div>
+        <div class="pillar"><i>02</i><div><b>Kliendikesksus</b><span>Lahendus lähtub sinu eesmärgist, mitte paragrahvist.</span></div></div>
+        <div class="pillar"><i>03</i><div><b>Võrgustik</b><span>Notarid, audiitorid ja konsultandid ühe laua taga.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="teenused">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Teenused</span>
+      <h2 class="serif">Leia oma küsimusele õige valdkond</h2>
+      <p>Kirjelda oma olukorda paari sõnaga – näiteks „üürileping“, „lahutus“ või „maksuamet“ – ja näitame, milline valdkond sind aitab.</p>
+    </div>
+    <div class="finder">
+      <label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Mis olukorras vajad abi?" aria-label="Otsi teenust"></label>
+      <div class="chips" id="chips">
+        <button class="chip" aria-pressed="true" data-f="all">Kõik</button>
+        <button class="chip" aria-pressed="false" data-f="biz">Ettevõttele</button>
+        <button class="chip" aria-pressed="false" data-f="pri">Eraisikule</button>
+        <button class="chip" aria-pressed="false" data-f="dis">Vaidlused</button>
+      </div>
+    </div>
+    <div class="services" id="services"></div>
+    <div class="empty" id="empty">Täpset vastet ei leidnud – kirjuta meile ja suuname su õige spetsialisti juurde. <a href="#kontakt">Võta ühendust →</a></div>
+  </div>
+</section>
+
+<dialog id="dlg">
+  <div class="dlg" style="position:relative">
+    <button class="icon-btn x" id="dlgClose" aria-label="Sulge">✕</button>
+    <span class="eyebrow" id="dlgNo"></span>
+    <h3 class="serif" id="dlgTitle"></h3>
+    <p id="dlgText"></p>
+    <div class="row"><a class="btn btn-accent" id="dlgAsk" href="#kontakt">Küsi selles valdkonnas nõu →</a></div>
+  </div>
+</dialog>
+
+<section id="protsess">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Kuidas me töötame</span>
+      <h2 class="serif">Selge tee probleemist lahenduseni</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><h4>Pöördumine</h4><p>Kirjelda oma küsimust vormi, e-kirja või telefoni teel. Vastame esimesel võimalusel.</p></div>
+      <div class="step"><h4>Analüüs</h4><p>Selgitame välja asjaolud, riskid ja sinu tegeliku eesmärgi.</p></div>
+      <div class="step"><h4>Lahendus</h4><p>Koostame dokumendid, peame läbirääkimisi ja suhtleme registrite ning ametitega.</p></div>
+      <div class="step"><h4>Esindamine</h4><p>Vajadusel seisame sinu eest kohtus, ametites ja vaidlustes lõpuni.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="partnerid" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Koostööpartnerid</span>
+      <h2 class="serif">Rohkem kui õigusbüroo</h2>
+    </div>
+    <div class="partners reveal">
+      <a class="partner" href="http://www.asutamine.ee" target="_blank" rel="noopener"><b>Asutamine.ee</b><span>Kiire ja turvaline firmade asutamine ning valmisfirmade müük.</span><em>asutamine.ee ↗</em></a>
+      <a class="partner" href="http://www.kas.ee" target="_blank" rel="noopener"><b>AS Konsultatsioonifirma Aare Sosaar</b><span>Tallinna Õigusbüroo koostööpartner.</span><em>kas.ee ↗</em></a>
+      <a class="partner" href="http://www.erainkasso.ee" target="_blank" rel="noopener"><b>ERA Liisingu Inkassoteenused AS</b><span>Tallinna Õigusbüroo koostööpartner võlanõuete haldamisel.</span><em>erainkasso.ee ↗</em></a>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Kontakt</span>
+      <h2 class="serif">Räägime sinu olukorrast</h2>
+      <p>Teenindame eesti, inglise, vene ja soome keeles.</p>
+    </div>
+    <div class="contact">
+      <div class="offices">
+        <div class="office">
+          <h3>Tallinn</h3>
+          <p>Tartu mnt 24-20, 10115 Tallinn<br>
+          Telefon: <a href="tel:+3726444112">+372 644 4112</a><br>
+          E-post: <a href="mailto:tallinn@tallinnlaw.ee">tallinn@tallinnlaw.ee</a></p>
+        </div>
+        <div class="office">
+          <h3>Tartu</h3>
+          <p>Jakobi 19-5, 51006 Tartu<br>
+          Telefon: <a href="tel:+3727304182">+372 7 304 182</a><br>
+          E-post: <a href="mailto:tartu@tallinnlaw.ee">tartu@tallinnlaw.ee</a></p>
+        </div>
+        <p class="req">OÜ Tallinna Õigusbüroo · Reg. nr 11016576 · KMKR EE100885701 · <a href="mailto:info@tallinnlaw.ee" style="color:inherit">info@tallinnlaw.ee</a></p>
+      </div>
+      <form class="f" id="form">
+        <h3>Saada meile kiri</h3>
+        <p class="sub">Küsimuste ja probleemide korral täida ankeet – vastame esimesel võimalusel.</p>
+        <div class="two">
+          <label>Ees- ja perekonnanimi<input name="name" required autocomplete="name"></label>
+          <label>E-post<input name="email" type="email" required autocomplete="email"></label>
+        </div>
+        <div class="two">
+          <label>Telefon<input name="phone" type="tel" autocomplete="tel"></label>
+          <label>Valdkond<select name="area" id="area"><option value="">Ei tea / muu</option></select></label>
+        </div>
+        <label>Kontor<select name="office"><option value="tallinn">Tallinn</option><option value="tartu">Tartu</option></select></label>
+        <label>Teade<textarea name="msg" required placeholder="Kirjelda lühidalt oma olukorda…"></textarea></label>
+        <button class="btn btn-accent" type="submit" style="justify-self:start">Saada päring →</button>
+        <p class="note">Vajutades avaneb sinu e-postiprogramm valmis kirjaga.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="lingid">
+  <div class="wrap">
+    <div class="head reveal"><span class="eyebrow">Kasulikud lingid</span></div>
+    <div class="useful reveal">
+      <div><h4>Õigusaktid</h4><ul><li><a href="https://www.riigiteataja.ee" target="_blank" rel="noopener">Riigi Teataja</a></li></ul></div>
+      <div><h4>Kohtud</h4><ul><li><a href="https://www.riigikohus.ee" target="_blank" rel="noopener">Riigikohus</a></li><li><a href="https://www.kohus.ee" target="_blank" rel="noopener">Eesti kohtud</a></li></ul></div>
+      <div><h4>Registrid ja ametid</h4><ul><li><a href="https://ariregister.rik.ee" target="_blank" rel="noopener">Äriregister (RIK)</a></li><li><a href="https://www.emta.ee" target="_blank" rel="noopener">Maksu- ja Tolliamet</a></li><li><a href="https://www.krediidiinfo.ee" target="_blank" rel="noopener">Krediidiinfo</a></li><li><a href="https://www.patendiamet.ee" target="_blank" rel="noopener">Patendiamet</a></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> OÜ Tallinna Õigusbüroo</span>
+    <span>Tartu mnt 24-20, Tallinn · Jakobi 19-5, Tartu · +372 644 4112</span>
+  </div>
+</footer>
+
+<script>
+const S=[
+ {t:"Äriõigus",g:["biz"],k:"firma asutamine ettevõte osaühing aktsiaselts likvideerimine ühinemine jagunemine ümberkujundamine ülevõtmine investeering üldkoosolek äriregister notar valmisfirma",d:"Osutame õigusabi kõikides äriõiguse küsimustes, sealhulgas firmade asutamise, likvideerimise, ühinemise, jagunemise, ümberkujundamise, ülevõtmise, muudatuste tegemise ja investeeringute juriidilise nõustamise osas. Korraldame aktsionäride üldkoosolekuid ning asjaajamist notarite ja äriregistriga. Müüme valmisfirmasid."},
+ {t:"Lepinguõigus",g:["biz","pri","dis"],k:"leping ost müük hange töövõtt kinge vahetus rent üür liising laen krediit läbirääkimised",d:"Koostame ostu-müügi, hanke, töövõtu, kinke, vahetuse, rendi, liisingu, laenu, krediidi jm lepinguid. Esindame kliente läbirääkimistel ning vaidlustes."},
+ {t:"Tööõigus",g:["biz","pri","dis"],k:"tööleping töövaidlus töötaja tööandja koondamine kollektiivleping materiaalne vastutus töösisekord vallandamine",d:"Esindame tööandjaid ja töötajaid tööõiguslikes küsimustes, sealhulgas töövaidlustes ja töösuhete reguleerimisel. Koostame töölepinguid, kollektiivlepinguid, materiaalse vastutuse kokkuleppeid, töösisekorra eeskirju ja muid tööõigusalaseid dokumente."},
+ {t:"Asjaõigus",g:["biz","pri","dis"],k:"kinnisvara korter maja maa kinnistu tehing notar kinnistusraamat hüpoteek omandamine võõrandamine",d:"Nõustame kinnisvaratehingute läbiviimisel, korraldame asjaajamise notari ja kinnistusregistriga ning koostame kinnisasjade omandamise, koormamise ja võõrandamise lepinguid. Esindame kliente läbirääkimistel ja vaidlustes."},
+ {t:"Ehitus- ja planeerimisõigus",g:["biz","pri"],k:"ehitus ehitusluba planeering detailplaneering kooskõlastus ehitusleping",d:"Nõustame ehitus- ja planeerimisõiguslikes küsimustes, sealhulgas kooskõlastuste ja lubade saamisel, vaidlustes, läbirääkimistel ning ehitustegevuse käigus. Koostame ehitustegevuseks vajalikke lepinguid."},
+ {t:"Perekonnaõigus",g:["pri","dis"],k:"lahutus abielu elatis alimendid ühisvara abieluvaraleping laps hooldusõigus pärimine",d:"Nõustame abieluvaralepingu koostamisel, abielu lahutamisel, elatise väljamõistmisel ja ühisvara jagamisel. Esindame kliente nii kohtuvälistes vaidlustes kui ka kohtus."},
+ {t:"Maksuõigus",g:["biz","pri","dis"],k:"maks maksuamet emta tolliamet maksuotsus käibemaks tulumaks maksuvaidlus",d:"Nõustame maksuõiguslikes küsimustes ning esindame kliente vaidlustes nii Maksu- ja Tolliametis kui ka kohtus."},
+ {t:"Haldusõigus",g:["biz","pri","dis"],k:"omavalitsus riik ametkond haldusakt ettekirjutus kaebus luba",d:"Nõustame ja esindame kliente haldusõiguslikel läbirääkimistel ja vaidlustes."},
+ {t:"Karistusõigus",g:["pri","biz","dis"],k:"kriminaal kuritegu kaitsja kannatanu kahju eeluurimine politsei prokuratuur kohus",d:"Kaitseme kliendi õigusi kriminaalmenetluses nii eeluurimisel kui ka kohtus. Koostame taotlusi ja kaebusi ning osaleme erimenetlustes. Peame oluliseks ka kannatanute esindamist, et tagada neile maksimaalne võimalik kahjude hüvitamine."},
+ {t:"Väärteomenetlus",g:["pri","biz","dis"],k:"trahv väärtegu liiklus kiiruseületamine vastulause kaebus",d:"Nõustame ja esindame kliente väärteomenetluses ning koostame vajalikud kaebused, taotlused ja vastulaused."},
+ {t:"Raamatupidamine",g:["biz"],k:"raamatupidamine aruanne majandusaasta deklaratsioon palk",d:"Pakume ettevõtetele raamatupidamisteenust."}
+];
+const el=document.getElementById("services"),area=document.getElementById("area");
+S.forEach((s,i)=>{
+  const b=document.createElement("button");b.className="card reveal";b.type="button";b.dataset.i=i;
+  b.innerHTML=`<span class="no">${String(i+1).padStart(2,"0")}</span><h3>${s.t}</h3><p>${s.d}</p><div class="more">Loe lähemalt →</div>`;
+  el.appendChild(b);
+  const o=document.createElement("option");o.value=o.textContent=s.t;area.appendChild(o);
+});
+let filt="all";
+const norm=t=>t.toLowerCase();
+function apply(){
+  const q=norm(document.getElementById("q").value.trim());let n=0;
+  el.querySelectorAll(".card").forEach(c=>{const s=S[c.dataset.i];
+    const okF=filt==="all"||s.g.includes(filt);
+    const okQ=!q||q.split(/\s+/).some(w=>w.length>1&&norm(s.t+" "+s.k+" "+s.d).includes(w));
+    c.hidden=!(okF&&okQ);if(!c.hidden){n++;c.classList.add("in")}});
+  document.getElementById("empty").style.display=n?"none":"block";
+}
+document.getElementById("q").addEventListener("input",apply);
+document.getElementById("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;
+  filt=b.dataset.f;document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c===b));apply();});
+
+const dlg=document.getElementById("dlg");
+el.addEventListener("click",e=>{const c=e.target.closest(".card");if(!c)return;const i=+c.dataset.i,s=S[i];
+  dlgNo.textContent="Valdkond "+String(i+1).padStart(2,"0");dlgTitle.textContent=s.t;dlgText.textContent=s.d;
+  dlgAsk.onclick=()=>{area.value=s.t;dlg.close();};
+  dlg.showModal();});
+dlgClose.onclick=()=>dlg.close();
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+
+document.getElementById("form").addEventListener("submit",e=>{e.preventDefault();const f=new FormData(e.target);
+  const to=f.get("office")==="tartu"?"tartu@tallinnlaw.ee":"tallinn@tallinnlaw.ee";
+  const subj="Päring veebilehelt"+(f.get("area")?" – "+f.get("area"):"");
+  const body=`${f.get("msg")}\n\n—\nNimi: ${f.get("name")}\nE-post: ${f.get("email")}\nTelefon: ${f.get("phone")||"-"}`;
+  location.href=`mailto:${to}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;});
+
+const hdr=document.getElementById("top");
+const onScroll=()=>hdr.classList.toggle("scrolled",scrollY>40);addEventListener("scroll",onScroll,{passive:true});onScroll();
+const mb=document.getElementById("menuBtn"),mob=document.getElementById("mobile");
+mb.onclick=()=>{const o=mob.classList.toggle("open");mb.setAttribute("aria-expanded",o);if(o)hdr.classList.add("scrolled");else onScroll();};
+mob.addEventListener("click",e=>{if(e.target.tagName==="A"){mob.classList.remove("open");onScroll();}});
+
+const root=document.documentElement;
+try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
+document.getElementById("theme").onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
+  root.dataset.theme=dark?"light":"dark";try{localStorage.setItem("theme",root.dataset.theme)}catch(e){}};
+
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(r=>io.observe(r));
+document.getElementById("yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
